@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "request_id": "5c8ecf1b47d04d45887121f589d40dd6",
+  "execution_id": "5c8ecf1b47d04d45887121f589d40dd6",
+  "backend": "live",
+  "status": "ok",
+  "documents": [
+    {
+      "id": "62682d5cf504ddb9cb541d6a",
+      "content": "# 电池测试\n\n\n1. 将黑色表笔插入负极COM端口，红色表笔插入正极V 端口。  \n2. 使用功能选择键，选择1.5V 或 9V 电池档位。  \n3. 将红色表笔接触电池正极，将黑色表笔接触电池负极。  \n4. 在显示屏上读取数值。\n\n<table><tr><td></td><td>良好</td><td>较弱</td><td>坏的</td></tr><tr><td>9V电池:</td><td>&gt;8.2V</td><td>7.2至8.2V</td><td>&lt;7.2V</td></tr><tr><td>1.5V电池:</td><td>&gt;1.35V</td><td>1.22至1.35V</td><td>&lt;1.22V</td></tr></table>",
+      "source": "local",
+      "title": "RS-12 manual",
+      "chunk_id": "469601738353018851",
+      "url": "",
+      "score": null,
+      "score_type": "rrf"
+    },
+    {
+      "id": "f1f894f1ffbd70cfc6911c66",
+      "content": "# 更换电池\n\n\n警告：为防触电，打开电池后盖前后，请勿操作仪表并把表笔与电源断开。\n\n1. 当电池电压不足时，显示屏上会出现“BAT”符号，此时应更换电池。  \n2. 按下面的步骤安装电池。  \n3. 妥善处理废电池。\n\n警告: 为防触电,在电池后盖安装和固定之前，请勿操作仪表。",
+      "source": "local",
+      "title": "RS-12 manual",
+      "chunk_id": "469601738353018852",
+      "url": "",
+      "score": null,
+      "score_type": "rrf"
+    },
+    {
+      "id": "5a02e4ade0f3ec87b18adaa6",
+      "content": "# 电池安装\n\n\n警告: 为防触电, 打开电池后盖前后，请勿操作仪表并把表笔与电源断开。\n\n1. 把表笔与仪表断开。  \n2. 用螺丝刀拧开电池后盖上的螺母。  \n3. 正确安装电池，正负极应一致。  \n4. 盖上电池后盖并拧紧螺丝钉。\n\n警告: 为防触电,在电池后盖安装和固定之前，请勿操作仪表。\n\n注意: 若仪表出现工作不正常，请检测保险丝和电池是否完好以及是否放在正确的位置。",
+      "source": "local",
+      "title": "RS-12 manual",
+      "chunk_id": "469601738353018840",
+      "url": "",
+      "score": null,
+      "score_type": "rrf"
+    },
+    {
+      "id": "fef5e648fbf1dfd1abc79a9e",
+      "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+      "source": "local",
+      "title": "RS-12 manual",
+      "chunk_id": "469601738353018833",
+      "url": "",
+      "score": null,
+      "score_type": "rrf"
+    },
+    {
+      "id": "035c787e1ccc6033c37da086",
+      "content": "# 操作指导",
+      "source": "local",
+      "title": "RS-12 manual",
+      "chunk_id": "469601738353018841",
+      "url": "",
+      "score": null,
+      "score_type": "rrf"
+    }
+  ],
+  "message": "",
+  "warnings": [],
+  "traces": [
+    {
+      "stage": "hyde",
+      "status": "skipped",
+      "duration_ms": 0.0,
+      "documents": 0,
+      "error_code": null
+    },
+    {
+      "stage": "kg",
+      "status": "skipped",
+      "duration_ms": 0.0,
+      "documents": 0,
+      "error_code": null
+    },
+    {
+      "stage": "web",
+      "status": "skipped",
+      "duration_ms": 0.0,
+      "documents": 0,
+      "error_code": null
+    },
+    {
+      "stage": "identify",
+      "status": "ok",
+      "duration_ms": 5484.0,
+      "documents": 0,
+      "error_code": null
+    },
+    {
+      "stage": "vector",
+      "status": "ok",
+      "duration_ms": 188.0,
+      "documents": 5,
+      "error_code": null
+    },
+    {
+      "stage": "fuse",
+      "status": "ok",
+      "duration_ms": 0.0,
+      "documents": 5,
+      "error_code": null
+    }
+  ],
+  "cache": "bypass",
+  "duration_ms": 29281.0,
+  "execution_ms": 29281.0
+}

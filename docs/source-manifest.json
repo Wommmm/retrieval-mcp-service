@@ -1,0 +1,70 @@
+{
+  "baseline_commit": "7a01ef30728f3a982db2a80f8ec20e206fef4644",
+  "source_repository": "https://github.com/Wommmm/shizhanxiangmu",
+  "files": [
+    {
+      "source": "knowledge/processor/query_process/config.py",
+      "sha256": "78bfebedee6ca9cfed2012ac7c147ec26c9642b3e45e5a12adbe63024f4cb752"
+    },
+    {
+      "source": "knowledge/processor/query_process/exceptions.py",
+      "sha256": "0133d48b5bbfc7666a6293bbbbed8b6ef526757d8de3e5985da2d2ed8d98c7a6"
+    },
+    {
+      "source": "knowledge/processor/query_process/state.py",
+      "sha256": "0d22528aab518b18993032d481d402f1bf4265f66b61373a62bea1e9f80e480d"
+    },
+    {
+      "source": "knowledge/processor/query_process/nodes/item_name_confirm_node.py",
+      "sha256": "3bd05dd150f13d27d18e4f2c32f2f9af4d35463e254e1022030315c73b55aa8b"
+    },
+    {
+      "source": "knowledge/processor/query_process/nodes/vector_search_node.py",
+      "sha256": "357a39265fe15a87893462d1642b41ba4286a430f827e49d79d6090fa90f9f55"
+    },
+    {
+      "source": "knowledge/processor/query_process/nodes/hyde_search_node.py",
+      "sha256": "e27816cdaaec29ebfbbcb3975180e3bb79ea6e8817cbfc8f7017b451ddd757d4"
+    },
+    {
+      "source": "knowledge/processor/query_process/nodes/kg_search_node.py",
+      "sha256": "904fd068af2a662b6463cead8877e04a02bf970bcbd9b2de213f05c66ccdb6b1"
+    },
+    {
+      "source": "knowledge/processor/query_process/nodes/rrf_node.py",
+      "sha256": "0f0ff91fe17822d11b126a395fc208f73a2fb5bdd4f4c30b59066824b24caf7d"
+    },
+    {
+      "source": "knowledge/processor/query_process/nodes/rerank_node.py",
+      "sha256": "2e3a63c4674dc0f640572dd09d5e19d1b4ae9a93dac54534dbef2e5521b5c592"
+    },
+    {
+      "source": "knowledge/processor/query_process/nodes/mcp_search_node.py",
+      "sha256": "dc3f5723f4c9f933e24501c38ca9253b4dc8d9398d2aee94aa4dfdca1a632532"
+    },
+    {
+      "source": "knowledge/utils/llm_client_util.py",
+      "sha256": "1c8a74802c7b7170c9216d42e85cd9460b36d25ae5a319d12c03110ebcfd2692"
+    },
+    {
+      "source": "knowledge/utils/bge_m3_embedding_util.py",
+      "sha256": "f351cbdeeb4dec90cc8da0fe20eaf531db326c201f45dd6d6e6c9049dc2a6fa6"
+    },
+    {
+      "source": "knowledge/utils/bge_rerank_util.py",
+      "sha256": "c89c39c013e58441d65c2216d0943f185bc2f03d544198af979fee68842add8f"
+    },
+    {
+      "source": "knowledge/utils/milvus_util.py",
+      "sha256": "433a1a972a28dc31e2de78a57ec3b0b21fdae88674d36507c9b044c69851659f"
+    },
+    {
+      "source": "knowledge/utils/neo4j_util.py",
+      "sha256": "85e041384e8dc0d09d4d5a9b1072206e23b25641d326f18094340c57b6625533"
+    },
+    {
+      "source": "knowledge/prompts/query/query_prompt.py",
+      "sha256": "9e7b91bed4dcbf47b44c09123a25f60a55f76c01c233a70b9b33a5df1fbc6964"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "source": "wheel_install_isolation_check",
+  "http": 200,
+  "backend": "demo",
+  "package_path": "isolated-install/retrieval_mcp/__init__.py",
+  "original_project_import_blocked": true,
+  "heavy_model_packages_not_imported": true,
+  "local_path_redacted": true
+}

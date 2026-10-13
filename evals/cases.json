@@ -1,0 +1,27 @@
+[
+    {
+        "id":"meter_operating_temperature",
+        "query":"RS-12数字万用表可以在什么温度下使用？",
+        "expected_content_any_of": ["0°C ~ 50°C", "32°F ~ 122°F"]
+    },
+    {
+        "id": "meter_battery_type",
+        "query": "RS-12数字万用表使用什么电池？",
+        "expected_content_any_of": ["NEDA 1604"]
+    },
+    {
+    "id": "meter_hold_reading",
+    "query": "RS-12怎样保持当前读数？",
+    "expected_content_any_of": ["按下“HOLD”键保持读数"]
+    },
+    {
+    "id": "meter_ol_display",
+    "query": "RS-12显示OL代表什么？",
+    "expected_content_any_of": ["测量值超出所选档位"]
+    },
+    {
+    "id": "meter_resistance_safety",
+    "query": "RS-12测量电阻前应该先做什么？",
+    "expected_content_any_of": ["测量前应断开电源"]
+    }
+]

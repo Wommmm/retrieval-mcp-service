@@ -1,0 +1,2329 @@
+{
+  "source": "live_http_ablation",
+  "created_at": "2026-10-13T10:18:29.071526+00:00",
+  "case_sha256": "f638814c1bee42db6a79901d7227e1395419f3d0c2d6d8d468f1078c20562f05",
+  "top_k": 5,
+  "cache_bypassed": true,
+  "label_method": "content substring, inherited 5-case initial set",
+  "limitations": [
+    "Single RS-12 manual; no generalization claim.",
+    "LLM rewriting is nondeterministic.",
+    "Single run per mode; timings are descriptive, not a load benchmark."
+  ],
+  "results": [
+    {
+      "mode": "vector",
+      "case_id": "meter_operating_temperature",
+      "http_status": 200,
+      "latency_s": 12.687,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "9b5cf76ba90d4f5981fabe472594293e",
+        "execution_id": "9b5cf76ba90d4f5981fabe472594293e",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "fef5e648fbf1dfd1abc79a9e",
+            "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018833",
+            "url": "",
+            "score": 0.01639344262295082,
+            "score_type": "rrf"
+          },
+          {
+            "id": "f23089f885f5b5fcb162dde9",
+            "content": "# 安全标识\n\n\n![警告标识：注意危险电压，操作需谨慎](http://minio_mock/万用表的使用/f3f7af819713659b6e8e7871d5c4ec3546d77966f6985a63152725e50f41c093.jpg)\n\n表明此操作须参照说明书进行。\n\nWARNING 表明此处可能出现危险电压，请避开以免导致死亡或严重伤害。  \nCAUTION 表明此处可能出现危险电压，请避开以免导致仪表的损坏。\n\n![万用表安全标识说明](http://minio_mock/万用表的使用/c787f7b337b289d57a67420b41bfe39f8f809db704d4052a5cbe189c2e1bca84.jpg)\n\n请勿连接到500VAC或VDC的电路上。\n\n表明此端口可能出现危险电压。\n\n![万用表安全标识说明图](http://minio_mock/万用表的使用/033cc6679fdc257ba3dbbe6635a6e18433bf314706cb9e326d21bb2154bbdbef.jpg)\n\n双绝缘保护。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018835",
+            "url": "",
+            "score": 0.016129032258064516,
+            "score_type": "rrf"
+          },
+          {
+            "id": "4bd1e52c228e70dbe3f926e1",
+            "content": "# 规格\n\n\n<table><tr><td>功能</td><td>量程</td><td>分辨率</td><td>精确度</td></tr><tr><td rowspan=\"5\">直流电压</td><td>200mV</td><td>0.1mV</td><td rowspan=\"3\">± (0.5% reading + 2 digits)</td></tr><tr><td>2000mV</td><td>1mV</td></tr><tr><td>20V</td><td>0.01V</td></tr><tr><td>200V</td><td>0.1V</td><td rowspan=\"2\">± (0.8% reading + 2 digits)</td></tr><tr><td>600V</td><td>1V</td></tr><tr><td rowspan=\"2\">交流电压</td><td>200V</td><td>0.1V</td><td rowspan=\"2\">± (1.2% reading + 10 digits 50/60Hz)</td></tr><tr><td>600V</td><td>1V</td></tr><tr><td rowspan=\"4\">直流电流</td><td>2000μA</td><td>1μA</td><td rowspan=\"2\">± (1.0% reading + 2 digits)</td></tr><tr><td>20mA</td><td>10μA</td></tr><tr><td>200mA</td><td>100μA</td><td>± (1.2% reading + 2 digits)</td></tr><tr><td>10A</td><td>10mA</td><td>± (2.0% reading + 2 digits)</td></tr><tr><td rowspan=\"5\">电阻</td><td>200Ω</td><td>0.1Ω</td><td rowspan=\"4\">± (0.8% reading + 2 digits)</td></tr><tr><td>2000Ω</td><td>1Ω</td></tr><tr><td>20kΩ</td><td>0.01kΩ</td></tr><tr><td>200kΩ</td><td>0.1kΩ</td></tr><tr><td>2000kΩ</td><td>1kΩ</td><td>± (1.0% reading + 2 digits)</td></tr><tr><td rowspan=\"2\">电池</td><td>9V</td><td>10mV</td><td rowspan=\"2\">± (1.0% reading + 2 digits)</td></tr><tr><td>1.5V</td><td>1mV</td></tr></table>\n\n注意: 精确度规格由两种因素组成。\n\n● (% reading) –测量电路的精确度。  \n● (+ digits) –数位转换器条码的精确度。\n\n注意: 精确度在65°F 至 83°F (18°C 至 28°C)，湿度低于75%RH时得出。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018838",
+            "url": "",
+            "score": 0.015873015873015872,
+            "score_type": "rrf"
+          },
+          {
+            "id": "a4fabf3667abdcfd3a84da9d",
+            "content": "# 安全手册\n\n\n为了您的安全，请在使用本仪表之前仔细阅读该手册:使用本表时，请勿将输入的测量值超出其所允许的量程范围。\n\n<table><tr><td></td><td>输入量程</td></tr><tr><td>功能</td><td>最大输入</td></tr><tr><td>交/直流电压</td><td>直流/交流电压600V</td></tr><tr><td>直流/交流电压</td><td>直流/交流电压600V, 200Vrms 用于200mV量程</td></tr><tr><td>mA直流</td><td>200mA 250V快速熔断保险丝</td></tr><tr><td>A DC</td><td>10A 250V 快速熔断保险丝(最多每15分钟,需时30秒)</td></tr><tr><td>电阻,短路测试</td><td>250Vrms, 最多15秒</td></tr></table>\n\n2. 在测量高压电路时，请严格注意个人及设备的安全防护措施。  \n3. 若负极端口（COM）电压超出500V以上接地电压，请勿进行电压测试。  \n4. 若功能开关置于电流，电阻或二极管位置时，请勿将表笔与电路相连接，否则会损坏仪表。  \n5. 进行电阻或二极管测试时，应把电容放电并断开电源。  \n6. 打开后盖，更换保险丝或电池之前，请关闭电源并取下表笔。  \n7. 请勿使用仪表，直到电池盖和保险丝盖装好，螺丝拧紧。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018834",
+            "url": "",
+            "score": 0.015625,
+            "score_type": "rrf"
+          },
+          {
+            "id": "035c787e1ccc6033c37da086",
+            "content": "# 操作指导",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018841",
+            "url": "",
+            "score": 0.015384615384615385,
+            "score_type": "rrf"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "hyde",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 3984.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 266.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 5,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 12687.0,
+        "execution_ms": 12687.0
+      },
+      "hit_at_k": false,
+      "reciprocal_rank": 0
+    },
+    {
+      "mode": "vector",
+      "case_id": "meter_battery_type",
+      "http_status": 200,
+      "latency_s": 0.891,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "a85a31a352f642608db85442601ed37e",
+        "execution_id": "a85a31a352f642608db85442601ed37e",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "62682d5cf504ddb9cb541d6a",
+            "content": "# 电池测试\n\n\n1. 将黑色表笔插入负极COM端口，红色表笔插入正极V 端口。  \n2. 使用功能选择键，选择1.5V 或 9V 电池档位。  \n3. 将红色表笔接触电池正极，将黑色表笔接触电池负极。  \n4. 在显示屏上读取数值。\n\n<table><tr><td></td><td>良好</td><td>较弱</td><td>坏的</td></tr><tr><td>9V电池:</td><td>&gt;8.2V</td><td>7.2至8.2V</td><td>&lt;7.2V</td></tr><tr><td>1.5V电池:</td><td>&gt;1.35V</td><td>1.22至1.35V</td><td>&lt;1.22V</td></tr></table>",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018851",
+            "url": "",
+            "score": 0.01639344262295082,
+            "score_type": "rrf"
+          },
+          {
+            "id": "f1f894f1ffbd70cfc6911c66",
+            "content": "# 更换电池\n\n\n警告：为防触电，打开电池后盖前后，请勿操作仪表并把表笔与电源断开。\n\n1. 当电池电压不足时，显示屏上会出现“BAT”符号，此时应更换电池。  \n2. 按下面的步骤安装电池。  \n3. 妥善处理废电池。\n\n警告: 为防触电,在电池后盖安装和固定之前，请勿操作仪表。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018852",
+            "url": "",
+            "score": 0.016129032258064516,
+            "score_type": "rrf"
+          },
+          {
+            "id": "5a02e4ade0f3ec87b18adaa6",
+            "content": "# 电池安装\n\n\n警告: 为防触电, 打开电池后盖前后，请勿操作仪表并把表笔与电源断开。\n\n1. 把表笔与仪表断开。  \n2. 用螺丝刀拧开电池后盖上的螺母。  \n3. 正确安装电池，正负极应一致。  \n4. 盖上电池后盖并拧紧螺丝钉。\n\n警告: 为防触电,在电池后盖安装和固定之前，请勿操作仪表。\n\n注意: 若仪表出现工作不正常，请检测保险丝和电池是否完好以及是否放在正确的位置。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018840",
+            "url": "",
+            "score": 0.015873015873015872,
+            "score_type": "rrf"
+          },
+          {
+            "id": "fef5e648fbf1dfd1abc79a9e",
+            "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018833",
+            "url": "",
+            "score": 0.015625,
+            "score_type": "rrf"
+          },
+          {
+            "id": "035c787e1ccc6033c37da086",
+            "content": "# 操作指导",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018841",
+            "url": "",
+            "score": 0.015384615384615385,
+            "score_type": "rrf"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "hyde",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 688.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 203.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 5,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 891.0,
+        "execution_ms": 891.0
+      },
+      "hit_at_k": false,
+      "reciprocal_rank": 0
+    },
+    {
+      "mode": "vector",
+      "case_id": "meter_hold_reading",
+      "http_status": 200,
+      "latency_s": 0.875,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "b9aaa2d53e034b3abb91af4a3294f1bd",
+        "execution_id": "b9aaa2d53e034b3abb91af4a3294f1bd",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "eb30955612df204cb0d90cfd",
+            "content": "# 数值保持按键HOLD\n\n\n保持键允许仪表固定测量值以供参考：\n\n1. 按下“HOLD”键保持读数， 同时出现“HOLD”字符  \n2. 再次按下“DATA HOLD”键 切换至正常操作",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018842",
+            "url": "",
+            "score": 0.01639344262295082,
+            "score_type": "rrf"
+          },
+          {
+            "id": "ec11b005bba286202843deef",
+            "content": "# 背光灯键（BACKLIGHT）\n\n\n1. 按下背光灯键开启背光灯。  \n2. 再次按背光灯键关闭背光灯。\n\n警告：小心触电，高压电流十分危险，应小心操作。\n\n1. 为了节省电池损耗，使用后请将旋钮调至“OFF”档。  \n2. 若测量过程中显示屏出现“OL”，表明测量值超出所选档位，应改选更高档。\n\n注意:在某些低交直流电压档位内，若表笔与被测物断开，显示屏将出现任意不稳定数值。该现象由高输入灵敏度所致。若接通电路，可读到稳定准确的数值。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018843",
+            "url": "",
+            "score": 0.016129032258064516,
+            "score_type": "rrf"
+          },
+          {
+            "id": "035c787e1ccc6033c37da086",
+            "content": "# 操作指导",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018841",
+            "url": "",
+            "score": 0.015873015873015872,
+            "score_type": "rrf"
+          },
+          {
+            "id": "4bd1e52c228e70dbe3f926e1",
+            "content": "# 规格\n\n\n<table><tr><td>功能</td><td>量程</td><td>分辨率</td><td>精确度</td></tr><tr><td rowspan=\"5\">直流电压</td><td>200mV</td><td>0.1mV</td><td rowspan=\"3\">± (0.5% reading + 2 digits)</td></tr><tr><td>2000mV</td><td>1mV</td></tr><tr><td>20V</td><td>0.01V</td></tr><tr><td>200V</td><td>0.1V</td><td rowspan=\"2\">± (0.8% reading + 2 digits)</td></tr><tr><td>600V</td><td>1V</td></tr><tr><td rowspan=\"2\">交流电压</td><td>200V</td><td>0.1V</td><td rowspan=\"2\">± (1.2% reading + 10 digits 50/60Hz)</td></tr><tr><td>600V</td><td>1V</td></tr><tr><td rowspan=\"4\">直流电流</td><td>2000μA</td><td>1μA</td><td rowspan=\"2\">± (1.0% reading + 2 digits)</td></tr><tr><td>20mA</td><td>10μA</td></tr><tr><td>200mA</td><td>100μA</td><td>± (1.2% reading + 2 digits)</td></tr><tr><td>10A</td><td>10mA</td><td>± (2.0% reading + 2 digits)</td></tr><tr><td rowspan=\"5\">电阻</td><td>200Ω</td><td>0.1Ω</td><td rowspan=\"4\">± (0.8% reading + 2 digits)</td></tr><tr><td>2000Ω</td><td>1Ω</td></tr><tr><td>20kΩ</td><td>0.01kΩ</td></tr><tr><td>200kΩ</td><td>0.1kΩ</td></tr><tr><td>2000kΩ</td><td>1kΩ</td><td>± (1.0% reading + 2 digits)</td></tr><tr><td rowspan=\"2\">电池</td><td>9V</td><td>10mV</td><td rowspan=\"2\">± (1.0% reading + 2 digits)</td></tr><tr><td>1.5V</td><td>1mV</td></tr></table>\n\n注意: 精确度规格由两种因素组成。\n\n● (% reading) –测量电路的精确度。  \n● (+ digits) –数位转换器条码的精确度。\n\n注意: 精确度在65°F 至 83°F (18°C 至 28°C)，湿度低于75%RH时得出。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018838",
+            "url": "",
+            "score": 0.015625,
+            "score_type": "rrf"
+          },
+          {
+            "id": "f1f894f1ffbd70cfc6911c66",
+            "content": "# 更换电池\n\n\n警告：为防触电，打开电池后盖前后，请勿操作仪表并把表笔与电源断开。\n\n1. 当电池电压不足时，显示屏上会出现“BAT”符号，此时应更换电池。  \n2. 按下面的步骤安装电池。  \n3. 妥善处理废电池。\n\n警告: 为防触电,在电池后盖安装和固定之前，请勿操作仪表。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018852",
+            "url": "",
+            "score": 0.015384615384615385,
+            "score_type": "rrf"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "hyde",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 640.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 219.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 5,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 875.0,
+        "execution_ms": 875.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "mode": "vector",
+      "case_id": "meter_ol_display",
+      "http_status": 200,
+      "latency_s": 1.016,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "ef63d7f7d28343069e498b38c2793a8b",
+        "execution_id": "ef63d7f7d28343069e498b38c2793a8b",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "ec11b005bba286202843deef",
+            "content": "# 背光灯键（BACKLIGHT）\n\n\n1. 按下背光灯键开启背光灯。  \n2. 再次按背光灯键关闭背光灯。\n\n警告：小心触电，高压电流十分危险，应小心操作。\n\n1. 为了节省电池损耗，使用后请将旋钮调至“OFF”档。  \n2. 若测量过程中显示屏出现“OL”，表明测量值超出所选档位，应改选更高档。\n\n注意:在某些低交直流电压档位内，若表笔与被测物断开，显示屏将出现任意不稳定数值。该现象由高输入灵敏度所致。若接通电路，可读到稳定准确的数值。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018843",
+            "url": "",
+            "score": 0.01639344262295082,
+            "score_type": "rrf"
+          },
+          {
+            "id": "4bd1e52c228e70dbe3f926e1",
+            "content": "# 规格\n\n\n<table><tr><td>功能</td><td>量程</td><td>分辨率</td><td>精确度</td></tr><tr><td rowspan=\"5\">直流电压</td><td>200mV</td><td>0.1mV</td><td rowspan=\"3\">± (0.5% reading + 2 digits)</td></tr><tr><td>2000mV</td><td>1mV</td></tr><tr><td>20V</td><td>0.01V</td></tr><tr><td>200V</td><td>0.1V</td><td rowspan=\"2\">± (0.8% reading + 2 digits)</td></tr><tr><td>600V</td><td>1V</td></tr><tr><td rowspan=\"2\">交流电压</td><td>200V</td><td>0.1V</td><td rowspan=\"2\">± (1.2% reading + 10 digits 50/60Hz)</td></tr><tr><td>600V</td><td>1V</td></tr><tr><td rowspan=\"4\">直流电流</td><td>2000μA</td><td>1μA</td><td rowspan=\"2\">± (1.0% reading + 2 digits)</td></tr><tr><td>20mA</td><td>10μA</td></tr><tr><td>200mA</td><td>100μA</td><td>± (1.2% reading + 2 digits)</td></tr><tr><td>10A</td><td>10mA</td><td>± (2.0% reading + 2 digits)</td></tr><tr><td rowspan=\"5\">电阻</td><td>200Ω</td><td>0.1Ω</td><td rowspan=\"4\">± (0.8% reading + 2 digits)</td></tr><tr><td>2000Ω</td><td>1Ω</td></tr><tr><td>20kΩ</td><td>0.01kΩ</td></tr><tr><td>200kΩ</td><td>0.1kΩ</td></tr><tr><td>2000kΩ</td><td>1kΩ</td><td>± (1.0% reading + 2 digits)</td></tr><tr><td rowspan=\"2\">电池</td><td>9V</td><td>10mV</td><td rowspan=\"2\">± (1.0% reading + 2 digits)</td></tr><tr><td>1.5V</td><td>1mV</td></tr></table>\n\n注意: 精确度规格由两种因素组成。\n\n● (% reading) –测量电路的精确度。  \n● (+ digits) –数位转换器条码的精确度。\n\n注意: 精确度在65°F 至 83°F (18°C 至 28°C)，湿度低于75%RH时得出。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018838",
+            "url": "",
+            "score": 0.016129032258064516,
+            "score_type": "rrf"
+          },
+          {
+            "id": "035c787e1ccc6033c37da086",
+            "content": "# 操作指导",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018841",
+            "url": "",
+            "score": 0.015873015873015872,
+            "score_type": "rrf"
+          },
+          {
+            "id": "f23089f885f5b5fcb162dde9",
+            "content": "# 安全标识\n\n\n![警告标识：注意危险电压，操作需谨慎](http://minio_mock/万用表的使用/f3f7af819713659b6e8e7871d5c4ec3546d77966f6985a63152725e50f41c093.jpg)\n\n表明此操作须参照说明书进行。\n\nWARNING 表明此处可能出现危险电压，请避开以免导致死亡或严重伤害。  \nCAUTION 表明此处可能出现危险电压，请避开以免导致仪表的损坏。\n\n![万用表安全标识说明](http://minio_mock/万用表的使用/c787f7b337b289d57a67420b41bfe39f8f809db704d4052a5cbe189c2e1bca84.jpg)\n\n请勿连接到500VAC或VDC的电路上。\n\n表明此端口可能出现危险电压。\n\n![万用表安全标识说明图](http://minio_mock/万用表的使用/033cc6679fdc257ba3dbbe6635a6e18433bf314706cb9e326d21bb2154bbdbef.jpg)\n\n双绝缘保护。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018835",
+            "url": "",
+            "score": 0.015625,
+            "score_type": "rrf"
+          },
+          {
+            "id": "8aaf5a4c9b527b8f9aab610a",
+            "content": "# 功能符号指示\n\n\n•))) 蜂鸣指示  \n二极管测试指示  \nµ micro (电流范围)   \nm milli ( 电压/电流范围)  \nk kilo (电阻范围)   \nVDC 直流电压  \nVAC 交流电流  \nADC 直流电流  \nBAT 电池电量不足指示",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018837",
+            "url": "",
+            "score": 0.015384615384615385,
+            "score_type": "rrf"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "hyde",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 828.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 188.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 5,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 1016.0,
+        "execution_ms": 1016.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "mode": "vector",
+      "case_id": "meter_resistance_safety",
+      "http_status": 200,
+      "latency_s": 0.953,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "c0eeb70307214b478fbc108ce3e0aadc",
+        "execution_id": "c0eeb70307214b478fbc108ce3e0aadc",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "b7954295d6a7735ac5ee8cb1",
+            "content": "# 电阻测量\n\n\n警告: 为防触电,测量前应断开电源，把所有电容放电，取出电池和拔掉电线。\n\n1. 将功能转盘置于最高电阻Ω位置.  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极Ω端口  \n3. 把表笔接触被测电路或元件。测试时最好断开电路的一端，以使剩余的电路不会干扰被测电阻数值。  \n4. 读取显示屏上读数，然后将功能转盘调至最低电阻Ω档位，通常大于实际电阻或预测电阻.读数由精确的小数点和数值表示。\n\n![万用表测量电阻操作示意图](http://minio_mock/万用表的使用/e63768e17ad35b92a5fb78abf51aee0281b7b6541bfa95f7ebb514f7a038a8b5.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018848",
+            "url": "",
+            "score": 0.01639344262295082,
+            "score_type": "rrf"
+          },
+          {
+            "id": "4bd1e52c228e70dbe3f926e1",
+            "content": "# 规格\n\n\n<table><tr><td>功能</td><td>量程</td><td>分辨率</td><td>精确度</td></tr><tr><td rowspan=\"5\">直流电压</td><td>200mV</td><td>0.1mV</td><td rowspan=\"3\">± (0.5% reading + 2 digits)</td></tr><tr><td>2000mV</td><td>1mV</td></tr><tr><td>20V</td><td>0.01V</td></tr><tr><td>200V</td><td>0.1V</td><td rowspan=\"2\">± (0.8% reading + 2 digits)</td></tr><tr><td>600V</td><td>1V</td></tr><tr><td rowspan=\"2\">交流电压</td><td>200V</td><td>0.1V</td><td rowspan=\"2\">± (1.2% reading + 10 digits 50/60Hz)</td></tr><tr><td>600V</td><td>1V</td></tr><tr><td rowspan=\"4\">直流电流</td><td>2000μA</td><td>1μA</td><td rowspan=\"2\">± (1.0% reading + 2 digits)</td></tr><tr><td>20mA</td><td>10μA</td></tr><tr><td>200mA</td><td>100μA</td><td>± (1.2% reading + 2 digits)</td></tr><tr><td>10A</td><td>10mA</td><td>± (2.0% reading + 2 digits)</td></tr><tr><td rowspan=\"5\">电阻</td><td>200Ω</td><td>0.1Ω</td><td rowspan=\"4\">± (0.8% reading + 2 digits)</td></tr><tr><td>2000Ω</td><td>1Ω</td></tr><tr><td>20kΩ</td><td>0.01kΩ</td></tr><tr><td>200kΩ</td><td>0.1kΩ</td></tr><tr><td>2000kΩ</td><td>1kΩ</td><td>± (1.0% reading + 2 digits)</td></tr><tr><td rowspan=\"2\">电池</td><td>9V</td><td>10mV</td><td rowspan=\"2\">± (1.0% reading + 2 digits)</td></tr><tr><td>1.5V</td><td>1mV</td></tr></table>\n\n注意: 精确度规格由两种因素组成。\n\n● (% reading) –测量电路的精确度。  \n● (+ digits) –数位转换器条码的精确度。\n\n注意: 精确度在65°F 至 83°F (18°C 至 28°C)，湿度低于75%RH时得出。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018838",
+            "url": "",
+            "score": 0.016129032258064516,
+            "score_type": "rrf"
+          },
+          {
+            "id": "a4fabf3667abdcfd3a84da9d",
+            "content": "# 安全手册\n\n\n为了您的安全，请在使用本仪表之前仔细阅读该手册:使用本表时，请勿将输入的测量值超出其所允许的量程范围。\n\n<table><tr><td></td><td>输入量程</td></tr><tr><td>功能</td><td>最大输入</td></tr><tr><td>交/直流电压</td><td>直流/交流电压600V</td></tr><tr><td>直流/交流电压</td><td>直流/交流电压600V, 200Vrms 用于200mV量程</td></tr><tr><td>mA直流</td><td>200mA 250V快速熔断保险丝</td></tr><tr><td>A DC</td><td>10A 250V 快速熔断保险丝(最多每15分钟,需时30秒)</td></tr><tr><td>电阻,短路测试</td><td>250Vrms, 最多15秒</td></tr></table>\n\n2. 在测量高压电路时，请严格注意个人及设备的安全防护措施。  \n3. 若负极端口（COM）电压超出500V以上接地电压，请勿进行电压测试。  \n4. 若功能开关置于电流，电阻或二极管位置时，请勿将表笔与电路相连接，否则会损坏仪表。  \n5. 进行电阻或二极管测试时，应把电容放电并断开电源。  \n6. 打开后盖，更换保险丝或电池之前，请关闭电源并取下表笔。  \n7. 请勿使用仪表，直到电池盖和保险丝盖装好，螺丝拧紧。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018834",
+            "url": "",
+            "score": 0.015873015873015872,
+            "score_type": "rrf"
+          },
+          {
+            "id": "6e497d7a0acda3b6c574261b",
+            "content": "# 直流电压测量\n\n\n注意：正打开或关闭电源时不要进行此项测量，瞬间的强大电压将损坏仪表。\n\n1. 将功能转盘置于V DC的位置。  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极V端口。   \n3. 将表笔尖端接触被测物,确保极性正确(红色连正极,黑色连负极)。  \n4. 显示屏上读取电压值。显示屏显示了精确的小数点，数值。若极性颠倒，数值前将显示负号。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018845",
+            "url": "",
+            "score": 0.015625,
+            "score_type": "rrf"
+          },
+          {
+            "id": "6c06a765f508493393d971d5",
+            "content": "# 二极管测试\n\n\n1. 将黑色表笔插入负极COM 端口，红色表笔插入正极V端口。   \n2. 将功能转盘置于 位置。  \n3. 把表笔与二极管相接触，正向电压将显示400 至 700mV.反向电压显示“ 1”符号.短路时将显示接近 0V，开路时会在两种极性上显示“1”符号。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018850",
+            "url": "",
+            "score": 0.015384615384615385,
+            "score_type": "rrf"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "hyde",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 765.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 188.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 5,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 953.0,
+        "execution_ms": 953.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "mode": "fusion",
+      "case_id": "meter_operating_temperature",
+      "http_status": 200,
+      "latency_s": 7.922,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "228b57e62dfa413f8dd7b135bfe482ed",
+        "execution_id": "228b57e62dfa413f8dd7b135bfe482ed",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "a4fabf3667abdcfd3a84da9d",
+            "content": "# 安全手册\n\n\n为了您的安全，请在使用本仪表之前仔细阅读该手册:使用本表时，请勿将输入的测量值超出其所允许的量程范围。\n\n<table><tr><td></td><td>输入量程</td></tr><tr><td>功能</td><td>最大输入</td></tr><tr><td>交/直流电压</td><td>直流/交流电压600V</td></tr><tr><td>直流/交流电压</td><td>直流/交流电压600V, 200Vrms 用于200mV量程</td></tr><tr><td>mA直流</td><td>200mA 250V快速熔断保险丝</td></tr><tr><td>A DC</td><td>10A 250V 快速熔断保险丝(最多每15分钟,需时30秒)</td></tr><tr><td>电阻,短路测试</td><td>250Vrms, 最多15秒</td></tr></table>\n\n2. 在测量高压电路时，请严格注意个人及设备的安全防护措施。  \n3. 若负极端口（COM）电压超出500V以上接地电压，请勿进行电压测试。  \n4. 若功能开关置于电流，电阻或二极管位置时，请勿将表笔与电路相连接，否则会损坏仪表。  \n5. 进行电阻或二极管测试时，应把电容放电并断开电源。  \n6. 打开后盖，更换保险丝或电池之前，请关闭电源并取下表笔。  \n7. 请勿使用仪表，直到电池盖和保险丝盖装好，螺丝拧紧。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018834",
+            "url": "",
+            "score": 0.032018442622950824,
+            "score_type": "rrf"
+          },
+          {
+            "id": "4bd1e52c228e70dbe3f926e1",
+            "content": "# 规格\n\n\n<table><tr><td>功能</td><td>量程</td><td>分辨率</td><td>精确度</td></tr><tr><td rowspan=\"5\">直流电压</td><td>200mV</td><td>0.1mV</td><td rowspan=\"3\">± (0.5% reading + 2 digits)</td></tr><tr><td>2000mV</td><td>1mV</td></tr><tr><td>20V</td><td>0.01V</td></tr><tr><td>200V</td><td>0.1V</td><td rowspan=\"2\">± (0.8% reading + 2 digits)</td></tr><tr><td>600V</td><td>1V</td></tr><tr><td rowspan=\"2\">交流电压</td><td>200V</td><td>0.1V</td><td rowspan=\"2\">± (1.2% reading + 10 digits 50/60Hz)</td></tr><tr><td>600V</td><td>1V</td></tr><tr><td rowspan=\"4\">直流电流</td><td>2000μA</td><td>1μA</td><td rowspan=\"2\">± (1.0% reading + 2 digits)</td></tr><tr><td>20mA</td><td>10μA</td></tr><tr><td>200mA</td><td>100μA</td><td>± (1.2% reading + 2 digits)</td></tr><tr><td>10A</td><td>10mA</td><td>± (2.0% reading + 2 digits)</td></tr><tr><td rowspan=\"5\">电阻</td><td>200Ω</td><td>0.1Ω</td><td rowspan=\"4\">± (0.8% reading + 2 digits)</td></tr><tr><td>2000Ω</td><td>1Ω</td></tr><tr><td>20kΩ</td><td>0.01kΩ</td></tr><tr><td>200kΩ</td><td>0.1kΩ</td></tr><tr><td>2000kΩ</td><td>1kΩ</td><td>± (1.0% reading + 2 digits)</td></tr><tr><td rowspan=\"2\">电池</td><td>9V</td><td>10mV</td><td rowspan=\"2\">± (1.0% reading + 2 digits)</td></tr><tr><td>1.5V</td><td>1mV</td></tr></table>\n\n注意: 精确度规格由两种因素组成。\n\n● (% reading) –测量电路的精确度。  \n● (+ digits) –数位转换器条码的精确度。\n\n注意: 精确度在65°F 至 83°F (18°C 至 28°C)，湿度低于75%RH时得出。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018838",
+            "url": "",
+            "score": 0.031746031746031744,
+            "score_type": "rrf"
+          },
+          {
+            "id": "78efe82d21ee334bcd0eaf12",
+            "content": "# 技术指标说明\n\n\n<table><tr><td>二极管测试</td><td>测试电流最大值1mA,开路电压2.8V DC典型值</td></tr><tr><td>短路蜂鸣测试</td><td>若电阻小于30时产生蜂鸣</td></tr><tr><td>电池测试电流</td><td>9V (6mA); 1.5V (100mA)</td></tr><tr><td>输入阻抗</td><td>&gt;1MΩ</td></tr><tr><td>交流电压频宽</td><td>45Hz ~ 450Hz</td></tr><tr><td>DCA电压跌路测试</td><td>200mV</td></tr><tr><td>显示</td><td>3 1/2 数位,2000位液晶显示,1.1”数位</td></tr><tr><td>超量程提示</td><td>以“1”表示</td></tr><tr><td>极性</td><td>自动(正极无显示);负极显示(-)</td></tr><tr><td>测量率</td><td>正常情况下每秒2次</td></tr><tr><td>低电池提示</td><td>电池电压不足时,显示BAT符号</td></tr><tr><td>电池</td><td>一粒9V (NEDA 1604) 电池</td></tr><tr><td>保险丝</td><td>mA, μA量程;0.2A/250V快速熔断保险丝,A档量程10A/250V快速熔断保险丝</td></tr><tr><td>操作环境</td><td>32°F ~ 122°F (0°C ~ 50°C)</td></tr><tr><td>储存温度</td><td>-4°F ~ 140°F (-20°C ~ 60°C)</td></tr><tr><td>相对湿度</td><td>&lt;70% 操作,&lt;80% 储存</td></tr><tr><td>室内使用,最高海拔</td><td>7000英尺(2000米)</td></tr><tr><td>重量</td><td>255g</td></tr><tr><td>尺寸</td><td>150mm x 70mm x 48mm</td></tr><tr><td>安全认证</td><td>室内使用,符合过电压类别II</td></tr><tr><td>污染级别</td><td>2</td></tr></table>",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018839",
+            "url": "",
+            "score": 0.02760444209413009,
+            "score_type": "rrf"
+          },
+          {
+            "id": "fef5e648fbf1dfd1abc79a9e",
+            "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018833",
+            "url": "",
+            "score": 0.01639344262295082,
+            "score_type": "rrf"
+          },
+          {
+            "id": "f23089f885f5b5fcb162dde9",
+            "content": "# 安全标识\n\n\n![警告标识：注意危险电压，操作需谨慎](http://minio_mock/万用表的使用/f3f7af819713659b6e8e7871d5c4ec3546d77966f6985a63152725e50f41c093.jpg)\n\n表明此操作须参照说明书进行。\n\nWARNING 表明此处可能出现危险电压，请避开以免导致死亡或严重伤害。  \nCAUTION 表明此处可能出现危险电压，请避开以免导致仪表的损坏。\n\n![万用表安全标识说明](http://minio_mock/万用表的使用/c787f7b337b289d57a67420b41bfe39f8f809db704d4052a5cbe189c2e1bca84.jpg)\n\n请勿连接到500VAC或VDC的电路上。\n\n表明此端口可能出现危险电压。\n\n![万用表安全标识说明图](http://minio_mock/万用表的使用/033cc6679fdc257ba3dbbe6635a6e18433bf314706cb9e326d21bb2154bbdbef.jpg)\n\n双绝缘保护。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018835",
+            "url": "",
+            "score": 0.016129032258064516,
+            "score_type": "rrf"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 797.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 188.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 4234.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 2703.0,
+            "documents": 1,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 8,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 7922.0,
+        "execution_ms": 7922.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "mode": "fusion",
+      "case_id": "meter_battery_type",
+      "http_status": 200,
+      "latency_s": 5.672,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "a2ba22ebb76f4e70a485b42ef300d140",
+        "execution_id": "a2ba22ebb76f4e70a485b42ef300d140",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "f1f894f1ffbd70cfc6911c66",
+            "content": "# 更换电池\n\n\n警告：为防触电，打开电池后盖前后，请勿操作仪表并把表笔与电源断开。\n\n1. 当电池电压不足时，显示屏上会出现“BAT”符号，此时应更换电池。  \n2. 按下面的步骤安装电池。  \n3. 妥善处理废电池。\n\n警告: 为防触电,在电池后盖安装和固定之前，请勿操作仪表。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018852",
+            "url": "",
+            "score": 0.03252247488101534,
+            "score_type": "rrf"
+          },
+          {
+            "id": "62682d5cf504ddb9cb541d6a",
+            "content": "# 电池测试\n\n\n1. 将黑色表笔插入负极COM端口，红色表笔插入正极V 端口。  \n2. 使用功能选择键，选择1.5V 或 9V 电池档位。  \n3. 将红色表笔接触电池正极，将黑色表笔接触电池负极。  \n4. 在显示屏上读取数值。\n\n<table><tr><td></td><td>良好</td><td>较弱</td><td>坏的</td></tr><tr><td>9V电池:</td><td>&gt;8.2V</td><td>7.2至8.2V</td><td>&lt;7.2V</td></tr><tr><td>1.5V电池:</td><td>&gt;1.35V</td><td>1.22至1.35V</td><td>&lt;1.22V</td></tr></table>",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018851",
+            "url": "",
+            "score": 0.032018442622950824,
+            "score_type": "rrf"
+          },
+          {
+            "id": "5a02e4ade0f3ec87b18adaa6",
+            "content": "# 电池安装\n\n\n警告: 为防触电, 打开电池后盖前后，请勿操作仪表并把表笔与电源断开。\n\n1. 把表笔与仪表断开。  \n2. 用螺丝刀拧开电池后盖上的螺母。  \n3. 正确安装电池，正负极应一致。  \n4. 盖上电池后盖并拧紧螺丝钉。\n\n警告: 为防触电,在电池后盖安装和固定之前，请勿操作仪表。\n\n注意: 若仪表出现工作不正常，请检测保险丝和电池是否完好以及是否放在正确的位置。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018840",
+            "url": "",
+            "score": 0.03200204813108039,
+            "score_type": "rrf"
+          },
+          {
+            "id": "78efe82d21ee334bcd0eaf12",
+            "content": "# 技术指标说明\n\n\n<table><tr><td>二极管测试</td><td>测试电流最大值1mA,开路电压2.8V DC典型值</td></tr><tr><td>短路蜂鸣测试</td><td>若电阻小于30时产生蜂鸣</td></tr><tr><td>电池测试电流</td><td>9V (6mA); 1.5V (100mA)</td></tr><tr><td>输入阻抗</td><td>&gt;1MΩ</td></tr><tr><td>交流电压频宽</td><td>45Hz ~ 450Hz</td></tr><tr><td>DCA电压跌路测试</td><td>200mV</td></tr><tr><td>显示</td><td>3 1/2 数位,2000位液晶显示,1.1”数位</td></tr><tr><td>超量程提示</td><td>以“1”表示</td></tr><tr><td>极性</td><td>自动(正极无显示);负极显示(-)</td></tr><tr><td>测量率</td><td>正常情况下每秒2次</td></tr><tr><td>低电池提示</td><td>电池电压不足时,显示BAT符号</td></tr><tr><td>电池</td><td>一粒9V (NEDA 1604) 电池</td></tr><tr><td>保险丝</td><td>mA, μA量程;0.2A/250V快速熔断保险丝,A档量程10A/250V快速熔断保险丝</td></tr><tr><td>操作环境</td><td>32°F ~ 122°F (0°C ~ 50°C)</td></tr><tr><td>储存温度</td><td>-4°F ~ 140°F (-20°C ~ 60°C)</td></tr><tr><td>相对湿度</td><td>&lt;70% 操作,&lt;80% 储存</td></tr><tr><td>室内使用,最高海拔</td><td>7000英尺(2000米)</td></tr><tr><td>重量</td><td>255g</td></tr><tr><td>尺寸</td><td>150mm x 70mm x 48mm</td></tr><tr><td>安全认证</td><td>室内使用,符合过电压类别II</td></tr><tr><td>污染级别</td><td>2</td></tr></table>",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018839",
+            "url": "",
+            "score": 0.027163338453661034,
+            "score_type": "rrf"
+          },
+          {
+            "id": "fef5e648fbf1dfd1abc79a9e",
+            "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018833",
+            "url": "",
+            "score": 0.015625,
+            "score_type": "rrf"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 797.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 172.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 4063.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 640.0,
+            "documents": 2,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 8,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 5672.0,
+        "execution_ms": 5672.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 0.25
+    },
+    {
+      "mode": "fusion",
+      "case_id": "meter_hold_reading",
+      "http_status": 200,
+      "latency_s": 5.0,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "46c8301551174eccb2e66099afb9be51",
+        "execution_id": "46c8301551174eccb2e66099afb9be51",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "eb30955612df204cb0d90cfd",
+            "content": "# 数值保持按键HOLD\n\n\n保持键允许仪表固定测量值以供参考：\n\n1. 按下“HOLD”键保持读数， 同时出现“HOLD”字符  \n2. 再次按下“DATA HOLD”键 切换至正常操作",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018842",
+            "url": "",
+            "score": 0.03278688524590164,
+            "score_type": "rrf"
+          },
+          {
+            "id": "ec11b005bba286202843deef",
+            "content": "# 背光灯键（BACKLIGHT）\n\n\n1. 按下背光灯键开启背光灯。  \n2. 再次按背光灯键关闭背光灯。\n\n警告：小心触电，高压电流十分危险，应小心操作。\n\n1. 为了节省电池损耗，使用后请将旋钮调至“OFF”档。  \n2. 若测量过程中显示屏出现“OL”，表明测量值超出所选档位，应改选更高档。\n\n注意:在某些低交直流电压档位内，若表笔与被测物断开，显示屏将出现任意不稳定数值。该现象由高输入灵敏度所致。若接通电路，可读到稳定准确的数值。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018843",
+            "url": "",
+            "score": 0.03200204813108039,
+            "score_type": "rrf"
+          },
+          {
+            "id": "f1f894f1ffbd70cfc6911c66",
+            "content": "# 更换电池\n\n\n警告：为防触电，打开电池后盖前后，请勿操作仪表并把表笔与电源断开。\n\n1. 当电池电压不足时，显示屏上会出现“BAT”符号，此时应更换电池。  \n2. 按下面的步骤安装电池。  \n3. 妥善处理废电池。\n\n警告: 为防触电,在电池后盖安装和固定之前，请勿操作仪表。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018852",
+            "url": "",
+            "score": 0.031009615384615385,
+            "score_type": "rrf"
+          },
+          {
+            "id": "b7954295d6a7735ac5ee8cb1",
+            "content": "# 电阻测量\n\n\n警告: 为防触电,测量前应断开电源，把所有电容放电，取出电池和拔掉电线。\n\n1. 将功能转盘置于最高电阻Ω位置.  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极Ω端口  \n3. 把表笔接触被测电路或元件。测试时最好断开电路的一端，以使剩余的电路不会干扰被测电阻数值。  \n4. 读取显示屏上读数，然后将功能转盘调至最低电阻Ω档位，通常大于实际电阻或预测电阻.读数由精确的小数点和数值表示。\n\n![万用表测量电阻操作示意图](http://minio_mock/万用表的使用/e63768e17ad35b92a5fb78abf51aee0281b7b6541bfa95f7ebb514f7a038a8b5.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018848",
+            "url": "",
+            "score": 0.027240143369175625,
+            "score_type": "rrf"
+          },
+          {
+            "id": "6e497d7a0acda3b6c574261b",
+            "content": "# 直流电压测量\n\n\n注意：正打开或关闭电源时不要进行此项测量，瞬间的强大电压将损坏仪表。\n\n1. 将功能转盘置于V DC的位置。  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极V端口。   \n3. 将表笔尖端接触被测物,确保极性正确(红色连正极,黑色连负极)。  \n4. 显示屏上读取电压值。显示屏显示了精确的小数点，数值。若极性颠倒，数值前将显示负号。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018845",
+            "url": "",
+            "score": 0.026153846153846153,
+            "score_type": "rrf"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 859.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 188.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 3234.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 703.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 10,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 5000.0,
+        "execution_ms": 5000.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "mode": "fusion",
+      "case_id": "meter_ol_display",
+      "http_status": 200,
+      "latency_s": 5.531,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "13121ffac42f4abfbbbbb5bda3ce63fd",
+        "execution_id": "13121ffac42f4abfbbbbb5bda3ce63fd",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "ec11b005bba286202843deef",
+            "content": "# 背光灯键（BACKLIGHT）\n\n\n1. 按下背光灯键开启背光灯。  \n2. 再次按背光灯键关闭背光灯。\n\n警告：小心触电，高压电流十分危险，应小心操作。\n\n1. 为了节省电池损耗，使用后请将旋钮调至“OFF”档。  \n2. 若测量过程中显示屏出现“OL”，表明测量值超出所选档位，应改选更高档。\n\n注意:在某些低交直流电压档位内，若表笔与被测物断开，显示屏将出现任意不稳定数值。该现象由高输入灵敏度所致。若接通电路，可读到稳定准确的数值。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018843",
+            "url": "",
+            "score": 0.04426229508196722,
+            "score_type": "rrf"
+          },
+          {
+            "id": "4bd1e52c228e70dbe3f926e1",
+            "content": "# 规格\n\n\n<table><tr><td>功能</td><td>量程</td><td>分辨率</td><td>精确度</td></tr><tr><td rowspan=\"5\">直流电压</td><td>200mV</td><td>0.1mV</td><td rowspan=\"3\">± (0.5% reading + 2 digits)</td></tr><tr><td>2000mV</td><td>1mV</td></tr><tr><td>20V</td><td>0.01V</td></tr><tr><td>200V</td><td>0.1V</td><td rowspan=\"2\">± (0.8% reading + 2 digits)</td></tr><tr><td>600V</td><td>1V</td></tr><tr><td rowspan=\"2\">交流电压</td><td>200V</td><td>0.1V</td><td rowspan=\"2\">± (1.2% reading + 10 digits 50/60Hz)</td></tr><tr><td>600V</td><td>1V</td></tr><tr><td rowspan=\"4\">直流电流</td><td>2000μA</td><td>1μA</td><td rowspan=\"2\">± (1.0% reading + 2 digits)</td></tr><tr><td>20mA</td><td>10μA</td></tr><tr><td>200mA</td><td>100μA</td><td>± (1.2% reading + 2 digits)</td></tr><tr><td>10A</td><td>10mA</td><td>± (2.0% reading + 2 digits)</td></tr><tr><td rowspan=\"5\">电阻</td><td>200Ω</td><td>0.1Ω</td><td rowspan=\"4\">± (0.8% reading + 2 digits)</td></tr><tr><td>2000Ω</td><td>1Ω</td></tr><tr><td>20kΩ</td><td>0.01kΩ</td></tr><tr><td>200kΩ</td><td>0.1kΩ</td></tr><tr><td>2000kΩ</td><td>1kΩ</td><td>± (1.0% reading + 2 digits)</td></tr><tr><td rowspan=\"2\">电池</td><td>9V</td><td>10mV</td><td rowspan=\"2\">± (1.0% reading + 2 digits)</td></tr><tr><td>1.5V</td><td>1mV</td></tr></table>\n\n注意: 精确度规格由两种因素组成。\n\n● (% reading) –测量电路的精确度。  \n● (+ digits) –数位转换器条码的精确度。\n\n注意: 精确度在65°F 至 83°F (18°C 至 28°C)，湿度低于75%RH时得出。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018838",
+            "url": "",
+            "score": 0.03225806451612903,
+            "score_type": "rrf"
+          },
+          {
+            "id": "f23089f885f5b5fcb162dde9",
+            "content": "# 安全标识\n\n\n![警告标识：注意危险电压，操作需谨慎](http://minio_mock/万用表的使用/f3f7af819713659b6e8e7871d5c4ec3546d77966f6985a63152725e50f41c093.jpg)\n\n表明此操作须参照说明书进行。\n\nWARNING 表明此处可能出现危险电压，请避开以免导致死亡或严重伤害。  \nCAUTION 表明此处可能出现危险电压，请避开以免导致仪表的损坏。\n\n![万用表安全标识说明](http://minio_mock/万用表的使用/c787f7b337b289d57a67420b41bfe39f8f809db704d4052a5cbe189c2e1bca84.jpg)\n\n请勿连接到500VAC或VDC的电路上。\n\n表明此端口可能出现危险电压。\n\n![万用表安全标识说明图](http://minio_mock/万用表的使用/033cc6679fdc257ba3dbbe6635a6e18433bf314706cb9e326d21bb2154bbdbef.jpg)\n\n双绝缘保护。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018835",
+            "url": "",
+            "score": 0.03125,
+            "score_type": "rrf"
+          },
+          {
+            "id": "8aaf5a4c9b527b8f9aab610a",
+            "content": "# 功能符号指示\n\n\n•))) 蜂鸣指示  \n二极管测试指示  \nµ micro (电流范围)   \nm milli ( 电压/电流范围)  \nk kilo (电阻范围)   \nVDC 直流电压  \nVAC 交流电流  \nADC 直流电流  \nBAT 电池电量不足指示",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018837",
+            "url": "",
+            "score": 0.03076923076923077,
+            "score_type": "rrf"
+          },
+          {
+            "id": "035c787e1ccc6033c37da086",
+            "content": "# 操作指导",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018841",
+            "url": "",
+            "score": 0.015873015873015872,
+            "score_type": "rrf"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 765.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 219.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 3906.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 625.0,
+            "documents": 2,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 7,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 5531.0,
+        "execution_ms": 5531.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "mode": "fusion",
+      "case_id": "meter_resistance_safety",
+      "http_status": 200,
+      "latency_s": 5.719,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "c5449fc3cbf846f2bf3774e5f9b12388",
+        "execution_id": "c5449fc3cbf846f2bf3774e5f9b12388",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "b7954295d6a7735ac5ee8cb1",
+            "content": "# 电阻测量\n\n\n警告: 为防触电,测量前应断开电源，把所有电容放电，取出电池和拔掉电线。\n\n1. 将功能转盘置于最高电阻Ω位置.  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极Ω端口  \n3. 把表笔接触被测电路或元件。测试时最好断开电路的一端，以使剩余的电路不会干扰被测电阻数值。  \n4. 读取显示屏上读数，然后将功能转盘调至最低电阻Ω档位，通常大于实际电阻或预测电阻.读数由精确的小数点和数值表示。\n\n![万用表测量电阻操作示意图](http://minio_mock/万用表的使用/e63768e17ad35b92a5fb78abf51aee0281b7b6541bfa95f7ebb514f7a038a8b5.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018848",
+            "url": "",
+            "score": 0.04426229508196722,
+            "score_type": "rrf"
+          },
+          {
+            "id": "3b81b88cd0e14cb96e846583",
+            "content": "# 直流电流测量\n\n\n注意：在10A情况下测量时间不能超过30秒，否则将可能损坏仪表或表笔。\n\n![万用表直流电流测量接线示意图（含10A档位注意事项）](http://minio_mock/万用表的使用/ebda5d8ac157110e046bcddcd24d412e9f3348ad393b825e06628c9bfa315fb1.jpg)\n\n1. 将黑色表笔插入负极COM端口。  \n2. 测量直流200mA 以下的电流,将功能转盘置于最高DC mA档位，并将红色表笔插入mA端口。  \n3. 测量直流10A时,将功能转盘置于10A档位，并将红色表笔(10A)端口。  \n4. 断开被测电路的电源。在你想测量电流的位置打开电路绝缘层。  \n5. 将黑色表笔接触被测电路的负极，红色表笔接触被测电路正极。  \n6. 接通电源。  \n7. 在显示屏上读取读数。进行mA DC测量时,不断重调功能转盘至低mA DC档位获得高分辨率读数.读数由精确的小数点和数值表示。\n\n![万用表测量直流电流接线示意图](http://minio_mock/万用表的使用/de6f382ab23d603ee9991ac608ed0a85fdfd9fb092eff38de5a9e5e04965011b.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018847",
+            "url": "",
+            "score": 0.026674937965260548,
+            "score_type": "rrf"
+          },
+          {
+            "id": "6e497d7a0acda3b6c574261b",
+            "content": "# 直流电压测量\n\n\n注意：正打开或关闭电源时不要进行此项测量，瞬间的强大电压将损坏仪表。\n\n1. 将功能转盘置于V DC的位置。  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极V端口。   \n3. 将表笔尖端接触被测物,确保极性正确(红色连正极,黑色连负极)。  \n4. 显示屏上读取电压值。显示屏显示了精确的小数点，数值。若极性颠倒，数值前将显示负号。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018845",
+            "url": "",
+            "score": 0.02664224664224664,
+            "score_type": "rrf"
+          },
+          {
+            "id": "4c8ffbc78495f4981467c798",
+            "content": "# 短路蜂鸣测试\n\n\n警告：请不要在接通电源的情况下进行在线短路蜂鸣测试以免触电。\n\n1. 将功能键转盘置于 位置。  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极Ω端口。  \n3. 把表笔与被测物体相接触。  \n4. 当电阻小于30时Ω，仪表会发出蜂鸣.如果是开路，显示屏将显示“1”字符。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018849",
+            "url": "",
+            "score": 0.0262739597942964,
+            "score_type": "rrf"
+          },
+          {
+            "id": "ebc75ec8653641c26a98c5ef",
+            "content": "# 交流电压测量\n\n\n警告：谨防触电。\n\n若表笔长度不够不能接触到某些240V用具插座的带电部位，则可能出现插座有电而读到的数值却为0的情况。因此若无电压显示，应检查表笔是否接触到了插座内的金属接口。\n\n注意：正打开或关闭电源时不要进行此项测量，瞬间的强大电压将损坏仪表。\n\n![万用表测量交流电压操作示意图](http://minio_mock/万用表的使用/7e6d1bbd2f2572efa5eb7d0bfd6670307be40be168d1d61d07315684d63abdce.jpg)\n\n1. 将功能转盘置于V AC的位置。  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极V端口。   \n3. 将表笔尖端接触被测物。  \n4. 显示屏上读取电压值。显示屏显示了精确的小数点，数值和(AC,V等)符号。\n\n在显示屏上读取电压数据。不断重调功能转盘至低交流电压档位获得高分辨率读数。读数由精确的小数点和数值表示。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018846",
+            "url": "",
+            "score": 0.026072761194029848,
+            "score_type": "rrf"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 672.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 172.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 3922.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 937.0,
+            "documents": 14,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 10,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 5719.0,
+        "execution_ms": 5719.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "mode": "rerank",
+      "case_id": "meter_operating_temperature",
+      "http_status": 200,
+      "latency_s": 24.5,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "d8f888d561dd4969b00f08ff63f360a2",
+        "execution_id": "d8f888d561dd4969b00f08ff63f360a2",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "fef5e648fbf1dfd1abc79a9e",
+            "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018833",
+            "url": "",
+            "score": -2.131718397140503,
+            "score_type": "rerank"
+          },
+          {
+            "id": "78efe82d21ee334bcd0eaf12",
+            "content": "# 技术指标说明\n\n\n<table><tr><td>二极管测试</td><td>测试电流最大值1mA,开路电压2.8V DC典型值</td></tr><tr><td>短路蜂鸣测试</td><td>若电阻小于30时产生蜂鸣</td></tr><tr><td>电池测试电流</td><td>9V (6mA); 1.5V (100mA)</td></tr><tr><td>输入阻抗</td><td>&gt;1MΩ</td></tr><tr><td>交流电压频宽</td><td>45Hz ~ 450Hz</td></tr><tr><td>DCA电压跌路测试</td><td>200mV</td></tr><tr><td>显示</td><td>3 1/2 数位,2000位液晶显示,1.1”数位</td></tr><tr><td>超量程提示</td><td>以“1”表示</td></tr><tr><td>极性</td><td>自动(正极无显示);负极显示(-)</td></tr><tr><td>测量率</td><td>正常情况下每秒2次</td></tr><tr><td>低电池提示</td><td>电池电压不足时,显示BAT符号</td></tr><tr><td>电池</td><td>一粒9V (NEDA 1604) 电池</td></tr><tr><td>保险丝</td><td>mA, μA量程;0.2A/250V快速熔断保险丝,A档量程10A/250V快速熔断保险丝</td></tr><tr><td>操作环境</td><td>32°F ~ 122°F (0°C ~ 50°C)</td></tr><tr><td>储存温度</td><td>-4°F ~ 140°F (-20°C ~ 60°C)</td></tr><tr><td>相对湿度</td><td>&lt;70% 操作,&lt;80% 储存</td></tr><tr><td>室内使用,最高海拔</td><td>7000英尺(2000米)</td></tr><tr><td>重量</td><td>255g</td></tr><tr><td>尺寸</td><td>150mm x 70mm x 48mm</td></tr><tr><td>安全认证</td><td>室内使用,符合过电压类别II</td></tr><tr><td>污染级别</td><td>2</td></tr></table>",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018839",
+            "url": "",
+            "score": -3.7484757900238037,
+            "score_type": "rerank"
+          },
+          {
+            "id": "f23089f885f5b5fcb162dde9",
+            "content": "# 安全标识\n\n\n![警告标识：注意危险电压，操作需谨慎](http://minio_mock/万用表的使用/f3f7af819713659b6e8e7871d5c4ec3546d77966f6985a63152725e50f41c093.jpg)\n\n表明此操作须参照说明书进行。\n\nWARNING 表明此处可能出现危险电压，请避开以免导致死亡或严重伤害。  \nCAUTION 表明此处可能出现危险电压，请避开以免导致仪表的损坏。\n\n![万用表安全标识说明](http://minio_mock/万用表的使用/c787f7b337b289d57a67420b41bfe39f8f809db704d4052a5cbe189c2e1bca84.jpg)\n\n请勿连接到500VAC或VDC的电路上。\n\n表明此端口可能出现危险电压。\n\n![万用表安全标识说明图](http://minio_mock/万用表的使用/033cc6679fdc257ba3dbbe6635a6e18433bf314706cb9e326d21bb2154bbdbef.jpg)\n\n双绝缘保护。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018835",
+            "url": "",
+            "score": -4.3593058586120605,
+            "score_type": "rerank"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 734.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 172.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 4266.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 640.0,
+            "documents": 1,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 8,
+            "error_code": null
+          },
+          {
+            "stage": "rerank",
+            "status": "ok",
+            "duration_ms": 18672.0,
+            "documents": 3,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 24500.0,
+        "execution_ms": 24500.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "mode": "rerank",
+      "case_id": "meter_battery_type",
+      "http_status": 200,
+      "latency_s": 20.188,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "c156f52057544dc1aef99543f8443da7",
+        "execution_id": "c156f52057544dc1aef99543f8443da7",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "62682d5cf504ddb9cb541d6a",
+            "content": "# 电池测试\n\n\n1. 将黑色表笔插入负极COM端口，红色表笔插入正极V 端口。  \n2. 使用功能选择键，选择1.5V 或 9V 电池档位。  \n3. 将红色表笔接触电池正极，将黑色表笔接触电池负极。  \n4. 在显示屏上读取数值。\n\n<table><tr><td></td><td>良好</td><td>较弱</td><td>坏的</td></tr><tr><td>9V电池:</td><td>&gt;8.2V</td><td>7.2至8.2V</td><td>&lt;7.2V</td></tr><tr><td>1.5V电池:</td><td>&gt;1.35V</td><td>1.22至1.35V</td><td>&lt;1.22V</td></tr></table>",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018851",
+            "url": "",
+            "score": -0.18288984894752502,
+            "score_type": "rerank"
+          },
+          {
+            "id": "fef5e648fbf1dfd1abc79a9e",
+            "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018833",
+            "url": "",
+            "score": -0.30862388014793396,
+            "score_type": "rerank"
+          },
+          {
+            "id": "78efe82d21ee334bcd0eaf12",
+            "content": "# 技术指标说明\n\n\n<table><tr><td>二极管测试</td><td>测试电流最大值1mA,开路电压2.8V DC典型值</td></tr><tr><td>短路蜂鸣测试</td><td>若电阻小于30时产生蜂鸣</td></tr><tr><td>电池测试电流</td><td>9V (6mA); 1.5V (100mA)</td></tr><tr><td>输入阻抗</td><td>&gt;1MΩ</td></tr><tr><td>交流电压频宽</td><td>45Hz ~ 450Hz</td></tr><tr><td>DCA电压跌路测试</td><td>200mV</td></tr><tr><td>显示</td><td>3 1/2 数位,2000位液晶显示,1.1”数位</td></tr><tr><td>超量程提示</td><td>以“1”表示</td></tr><tr><td>极性</td><td>自动(正极无显示);负极显示(-)</td></tr><tr><td>测量率</td><td>正常情况下每秒2次</td></tr><tr><td>低电池提示</td><td>电池电压不足时,显示BAT符号</td></tr><tr><td>电池</td><td>一粒9V (NEDA 1604) 电池</td></tr><tr><td>保险丝</td><td>mA, μA量程;0.2A/250V快速熔断保险丝,A档量程10A/250V快速熔断保险丝</td></tr><tr><td>操作环境</td><td>32°F ~ 122°F (0°C ~ 50°C)</td></tr><tr><td>储存温度</td><td>-4°F ~ 140°F (-20°C ~ 60°C)</td></tr><tr><td>相对湿度</td><td>&lt;70% 操作,&lt;80% 储存</td></tr><tr><td>室内使用,最高海拔</td><td>7000英尺(2000米)</td></tr><tr><td>重量</td><td>255g</td></tr><tr><td>尺寸</td><td>150mm x 70mm x 48mm</td></tr><tr><td>安全认证</td><td>室内使用,符合过电压类别II</td></tr><tr><td>污染级别</td><td>2</td></tr></table>",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018839",
+            "url": "",
+            "score": -2.3905136585235596,
+            "score_type": "rerank"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 781.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 203.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 3422.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 500.0,
+            "documents": 2,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 8,
+            "error_code": null
+          },
+          {
+            "stage": "rerank",
+            "status": "ok",
+            "duration_ms": 15266.0,
+            "documents": 3,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 20188.0,
+        "execution_ms": 20188.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "mode": "rerank",
+      "case_id": "meter_hold_reading",
+      "http_status": 200,
+      "latency_s": 25.172,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "54085e5c30ee4d3083fd9886fdad1c44",
+        "execution_id": "54085e5c30ee4d3083fd9886fdad1c44",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "eb30955612df204cb0d90cfd",
+            "content": "# 数值保持按键HOLD\n\n\n保持键允许仪表固定测量值以供参考：\n\n1. 按下“HOLD”键保持读数， 同时出现“HOLD”字符  \n2. 再次按下“DATA HOLD”键 切换至正常操作",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018842",
+            "url": "",
+            "score": 2.3881797790527344,
+            "score_type": "rerank"
+          },
+          {
+            "id": "ec11b005bba286202843deef",
+            "content": "# 背光灯键（BACKLIGHT）\n\n\n1. 按下背光灯键开启背光灯。  \n2. 再次按背光灯键关闭背光灯。\n\n警告：小心触电，高压电流十分危险，应小心操作。\n\n1. 为了节省电池损耗，使用后请将旋钮调至“OFF”档。  \n2. 若测量过程中显示屏出现“OL”，表明测量值超出所选档位，应改选更高档。\n\n注意:在某些低交直流电压档位内，若表笔与被测物断开，显示屏将出现任意不稳定数值。该现象由高输入灵敏度所致。若接通电路，可读到稳定准确的数值。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018843",
+            "url": "",
+            "score": -2.404494524002075,
+            "score_type": "rerank"
+          },
+          {
+            "id": "ebc75ec8653641c26a98c5ef",
+            "content": "# 交流电压测量\n\n\n警告：谨防触电。\n\n若表笔长度不够不能接触到某些240V用具插座的带电部位，则可能出现插座有电而读到的数值却为0的情况。因此若无电压显示，应检查表笔是否接触到了插座内的金属接口。\n\n注意：正打开或关闭电源时不要进行此项测量，瞬间的强大电压将损坏仪表。\n\n![万用表测量交流电压操作示意图](http://minio_mock/万用表的使用/7e6d1bbd2f2572efa5eb7d0bfd6670307be40be168d1d61d07315684d63abdce.jpg)\n\n1. 将功能转盘置于V AC的位置。  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极V端口。   \n3. 将表笔尖端接触被测物。  \n4. 显示屏上读取电压值。显示屏显示了精确的小数点，数值和(AC,V等)符号。\n\n在显示屏上读取电压数据。不断重调功能转盘至低交流电压档位获得高分辨率读数。读数由精确的小数点和数值表示。",
+            "source": "local",
+            "title": "# 交流电压测量",
+            "chunk_id": "469601738353018846",
+            "url": "",
+            "score": -3.677232503890991,
+            "score_type": "rerank"
+          },
+          {
+            "id": "fef5e648fbf1dfd1abc79a9e",
+            "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+            "source": "local",
+            "title": "# 使用说明书",
+            "chunk_id": "469601738353018833",
+            "url": "",
+            "score": -3.72812557220459,
+            "score_type": "rerank"
+          },
+          {
+            "id": "62682d5cf504ddb9cb541d6a",
+            "content": "# 电池测试\n\n\n1. 将黑色表笔插入负极COM端口，红色表笔插入正极V 端口。  \n2. 使用功能选择键，选择1.5V 或 9V 电池档位。  \n3. 将红色表笔接触电池正极，将黑色表笔接触电池负极。  \n4. 在显示屏上读取数值。\n\n<table><tr><td></td><td>良好</td><td>较弱</td><td>坏的</td></tr><tr><td>9V电池:</td><td>&gt;8.2V</td><td>7.2至8.2V</td><td>&lt;7.2V</td></tr><tr><td>1.5V电池:</td><td>&gt;1.35V</td><td>1.22至1.35V</td><td>&lt;1.22V</td></tr></table>",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018851",
+            "url": "",
+            "score": -3.959846019744873,
+            "score_type": "rerank"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 782.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 172.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 3656.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 703.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 10,
+            "error_code": null
+          },
+          {
+            "stage": "rerank",
+            "status": "ok",
+            "duration_ms": 19829.0,
+            "documents": 8,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 25172.0,
+        "execution_ms": 25172.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "mode": "rerank",
+      "case_id": "meter_ol_display",
+      "http_status": 200,
+      "latency_s": 22.515,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "55d266d1dcf946629c6b2f6fe155a500",
+        "execution_id": "55d266d1dcf946629c6b2f6fe155a500",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "ec11b005bba286202843deef",
+            "content": "# 背光灯键（BACKLIGHT）\n\n\n1. 按下背光灯键开启背光灯。  \n2. 再次按背光灯键关闭背光灯。\n\n警告：小心触电，高压电流十分危险，应小心操作。\n\n1. 为了节省电池损耗，使用后请将旋钮调至“OFF”档。  \n2. 若测量过程中显示屏出现“OL”，表明测量值超出所选档位，应改选更高档。\n\n注意:在某些低交直流电压档位内，若表笔与被测物断开，显示屏将出现任意不稳定数值。该现象由高输入灵敏度所致。若接通电路，可读到稳定准确的数值。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018843",
+            "url": "",
+            "score": 0.6445023417472839,
+            "score_type": "rerank"
+          },
+          {
+            "id": "fef5e648fbf1dfd1abc79a9e",
+            "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+            "source": "local",
+            "title": "# 使用说明书",
+            "chunk_id": "469601738353018833",
+            "url": "",
+            "score": -4.228883266448975,
+            "score_type": "rerank"
+          },
+          {
+            "id": "f23089f885f5b5fcb162dde9",
+            "content": "# 安全标识\n\n\n![警告标识：注意危险电压，操作需谨慎](http://minio_mock/万用表的使用/f3f7af819713659b6e8e7871d5c4ec3546d77966f6985a63152725e50f41c093.jpg)\n\n表明此操作须参照说明书进行。\n\nWARNING 表明此处可能出现危险电压，请避开以免导致死亡或严重伤害。  \nCAUTION 表明此处可能出现危险电压，请避开以免导致仪表的损坏。\n\n![万用表安全标识说明](http://minio_mock/万用表的使用/c787f7b337b289d57a67420b41bfe39f8f809db704d4052a5cbe189c2e1bca84.jpg)\n\n请勿连接到500VAC或VDC的电路上。\n\n表明此端口可能出现危险电压。\n\n![万用表安全标识说明图](http://minio_mock/万用表的使用/033cc6679fdc257ba3dbbe6635a6e18433bf314706cb9e326d21bb2154bbdbef.jpg)\n\n双绝缘保护。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018835",
+            "url": "",
+            "score": -5.265586853027344,
+            "score_type": "rerank"
+          },
+          {
+            "id": "ebc75ec8653641c26a98c5ef",
+            "content": "# 交流电压测量\n\n\n警告：谨防触电。\n\n若表笔长度不够不能接触到某些240V用具插座的带电部位，则可能出现插座有电而读到的数值却为0的情况。因此若无电压显示，应检查表笔是否接触到了插座内的金属接口。\n\n注意：正打开或关闭电源时不要进行此项测量，瞬间的强大电压将损坏仪表。\n\n![万用表测量交流电压操作示意图](http://minio_mock/万用表的使用/7e6d1bbd2f2572efa5eb7d0bfd6670307be40be168d1d61d07315684d63abdce.jpg)\n\n1. 将功能转盘置于V AC的位置。  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极V端口。   \n3. 将表笔尖端接触被测物。  \n4. 显示屏上读取电压值。显示屏显示了精确的小数点，数值和(AC,V等)符号。\n\n在显示屏上读取电压数据。不断重调功能转盘至低交流电压档位获得高分辨率读数。读数由精确的小数点和数值表示。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018846",
+            "url": "",
+            "score": -5.287258625030518,
+            "score_type": "rerank"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 750.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 203.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 4172.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 641.0,
+            "documents": 2,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 8,
+            "error_code": null
+          },
+          {
+            "stage": "rerank",
+            "status": "ok",
+            "duration_ms": 16734.0,
+            "documents": 4,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 22515.0,
+        "execution_ms": 22515.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "mode": "rerank",
+      "case_id": "meter_resistance_safety",
+      "http_status": 200,
+      "latency_s": 23.86,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "d38758aa3ace403696a0c95481d3c809",
+        "execution_id": "d38758aa3ace403696a0c95481d3c809",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "b7954295d6a7735ac5ee8cb1",
+            "content": "# 电阻测量\n\n\n警告: 为防触电,测量前应断开电源，把所有电容放电，取出电池和拔掉电线。\n\n1. 将功能转盘置于最高电阻Ω位置.  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极Ω端口  \n3. 把表笔接触被测电路或元件。测试时最好断开电路的一端，以使剩余的电路不会干扰被测电阻数值。  \n4. 读取显示屏上读数，然后将功能转盘调至最低电阻Ω档位，通常大于实际电阻或预测电阻.读数由精确的小数点和数值表示。\n\n![万用表测量电阻操作示意图](http://minio_mock/万用表的使用/e63768e17ad35b92a5fb78abf51aee0281b7b6541bfa95f7ebb514f7a038a8b5.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018848",
+            "url": "",
+            "score": 2.26515793800354,
+            "score_type": "rerank"
+          },
+          {
+            "id": "4c8ffbc78495f4981467c798",
+            "content": "# 短路蜂鸣测试\n\n\n警告：请不要在接通电源的情况下进行在线短路蜂鸣测试以免触电。\n\n1. 将功能键转盘置于 位置。  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极Ω端口。  \n3. 把表笔与被测物体相接触。  \n4. 当电阻小于30时Ω，仪表会发出蜂鸣.如果是开路，显示屏将显示“1”字符。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018849",
+            "url": "",
+            "score": -2.172119140625,
+            "score_type": "rerank"
+          },
+          {
+            "id": "3b81b88cd0e14cb96e846583",
+            "content": "# 直流电流测量\n\n\n注意：在10A情况下测量时间不能超过30秒，否则将可能损坏仪表或表笔。\n\n![万用表直流电流测量接线示意图（含10A档位注意事项）](http://minio_mock/万用表的使用/ebda5d8ac157110e046bcddcd24d412e9f3348ad393b825e06628c9bfa315fb1.jpg)\n\n1. 将黑色表笔插入负极COM端口。  \n2. 测量直流200mA 以下的电流,将功能转盘置于最高DC mA档位，并将红色表笔插入mA端口。  \n3. 测量直流10A时,将功能转盘置于10A档位，并将红色表笔(10A)端口。  \n4. 断开被测电路的电源。在你想测量电流的位置打开电路绝缘层。  \n5. 将黑色表笔接触被测电路的负极，红色表笔接触被测电路正极。  \n6. 接通电源。  \n7. 在显示屏上读取读数。进行mA DC测量时,不断重调功能转盘至低mA DC档位获得高分辨率读数.读数由精确的小数点和数值表示。\n\n![万用表测量直流电流接线示意图](http://minio_mock/万用表的使用/de6f382ab23d603ee9991ac608ed0a85fdfd9fb092eff38de5a9e5e04965011b.jpg)",
+            "source": "local",
+            "title": "# 直流电流测量",
+            "chunk_id": "469601738353018847",
+            "url": "",
+            "score": -3.830737590789795,
+            "score_type": "rerank"
+          },
+          {
+            "id": "78efe82d21ee334bcd0eaf12",
+            "content": "# 技术指标说明\n\n\n<table><tr><td>二极管测试</td><td>测试电流最大值1mA,开路电压2.8V DC典型值</td></tr><tr><td>短路蜂鸣测试</td><td>若电阻小于30时产生蜂鸣</td></tr><tr><td>电池测试电流</td><td>9V (6mA); 1.5V (100mA)</td></tr><tr><td>输入阻抗</td><td>&gt;1MΩ</td></tr><tr><td>交流电压频宽</td><td>45Hz ~ 450Hz</td></tr><tr><td>DCA电压跌路测试</td><td>200mV</td></tr><tr><td>显示</td><td>3 1/2 数位,2000位液晶显示,1.1”数位</td></tr><tr><td>超量程提示</td><td>以“1”表示</td></tr><tr><td>极性</td><td>自动(正极无显示);负极显示(-)</td></tr><tr><td>测量率</td><td>正常情况下每秒2次</td></tr><tr><td>低电池提示</td><td>电池电压不足时,显示BAT符号</td></tr><tr><td>电池</td><td>一粒9V (NEDA 1604) 电池</td></tr><tr><td>保险丝</td><td>mA, μA量程;0.2A/250V快速熔断保险丝,A档量程10A/250V快速熔断保险丝</td></tr><tr><td>操作环境</td><td>32°F ~ 122°F (0°C ~ 50°C)</td></tr><tr><td>储存温度</td><td>-4°F ~ 140°F (-20°C ~ 60°C)</td></tr><tr><td>相对湿度</td><td>&lt;70% 操作,&lt;80% 储存</td></tr><tr><td>室内使用,最高海拔</td><td>7000英尺(2000米)</td></tr><tr><td>重量</td><td>255g</td></tr><tr><td>尺寸</td><td>150mm x 70mm x 48mm</td></tr><tr><td>安全认证</td><td>室内使用,符合过电压类别II</td></tr><tr><td>污染级别</td><td>2</td></tr></table>",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018839",
+            "url": "",
+            "score": -3.9212911128997803,
+            "score_type": "rerank"
+          },
+          {
+            "id": "6e497d7a0acda3b6c574261b",
+            "content": "# 直流电压测量\n\n\n注意：正打开或关闭电源时不要进行此项测量，瞬间的强大电压将损坏仪表。\n\n1. 将功能转盘置于V DC的位置。  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极V端口。   \n3. 将表笔尖端接触被测物,确保极性正确(红色连正极,黑色连负极)。  \n4. 显示屏上读取电压值。显示屏显示了精确的小数点，数值。若极性颠倒，数值前将显示负号。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018845",
+            "url": "",
+            "score": -4.201838493347168,
+            "score_type": "rerank"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "web",
+            "status": "skipped",
+            "duration_ms": 0.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 797.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 187.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 3156.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 704.0,
+            "documents": 14,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 10,
+            "error_code": null
+          },
+          {
+            "stage": "rerank",
+            "status": "ok",
+            "duration_ms": 19000.0,
+            "documents": 8,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 23860.0,
+        "execution_ms": 23860.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "mode": "web_rerank",
+      "case_id": "meter_operating_temperature",
+      "http_status": 200,
+      "latency_s": 30.781,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "7a8d047c1ce844e5bba7b9567db9e786",
+        "execution_id": "7a8d047c1ce844e5bba7b9567db9e786",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "ecb3a13396f5cac028a511c6",
+            "content": "RS PRO RS12, 数字显示器 手持式 万用表, 最大600 V 交流, 最大600 V 直流 10 A 直流, 最大2 mΩ RS 库存编号 : 123-1939 制造商 : RS PRO 可享批量折扣 小计(1 件)* RMB121.29 (不含税) RMB137.06 (含税) Add to Basket 单位 选择或输入数量 <table><tr><th>单位</th><th>每单位</th></tr><tr><td>1 - 4</td><td>RMB121.29</td></tr><tr><td>5 +</td><td>RMB97.88</td></tr></table>",
+            "source": "web",
+            "title": "RS PRO RS12, 数字显示器 手持式 万用表, 最大600 V 交流, 最大600 V 直流 10 A 直流, 最大2 mΩ",
+            "chunk_id": null,
+            "url": "https://rsonline.cn/web/p/multimeters/1231939/",
+            "score": -1.179855227470398,
+            "score_type": "rerank"
+          },
+          {
+            "id": "4421050cb882fda6f23b1bf0",
+            "content": "RS PRO 温度表 120 °C最高, °C, 华氏, F温标, 用于气候控制技术 RS 库存编号 : 制造商 : RS PRO 小计(1 件)* RMB67.91 (不含税) RMB76.74 (含税) 单位 选择或输入数量 有库存 116 件将从其他地点发货  **需要更多产品?**输入您需要的数量,点击“查看送货日期”,查看库存和送货信息。 批量定价选项 <table><tr><th>单位</th><th>每单位</th></tr><tr><td>1 - 4</td><td>RMB67.91</td></tr><tr><td>5 +</td><td>RMB61.12</td></tr></table> * 参考价格 产品技术参数 产品技术参数资料 法例与合规 产品详细信息 <table><tr><th>选择全部</th><th>属性</th><th>值</th></tr><tr><td></td><td>品牌</td><td>RS PRO</td></tr><tr><td></td><td>产品类型</td><td>温度表</td></tr><tr><td></td><td>最大温度测量</td><td>120°C</td></tr><tr><td></td><td>精确度</td><td>±4°C</td></tr><tr><td></td><td>温度单位</td><td>°C, 华氏, F</td></tr><tr><td></td><td>应用</td><td>气候控制技术</td></tr><tr><td></td><td>刻度盘尺寸</td><td>66mm</td></tr><tr><td></td><td>标准/认证</td><td>No</td></tr><tr><td></td><td>盒材料</td><td>不锈钢</td></tr><tr><td colspan=\"3\">查找类似产品</td></tr></table>",
+            "source": "web",
+            "title": "RS PRO 温度表 120 °C最高, °C, 华氏, F温标, 用于气候控制技术",
+            "chunk_id": null,
+            "url": "https://rsonline.cn/mobile/p/dial-thermometers/4315621/",
+            "score": -1.9673765897750854,
+            "score_type": "rerank"
+          },
+          {
+            "id": "fef5e648fbf1dfd1abc79a9e",
+            "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018833",
+            "url": "",
+            "score": -2.131718397140503,
+            "score_type": "rerank"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 719.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 203.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 3688.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 578.0,
+            "documents": 1,
+            "error_code": null
+          },
+          {
+            "stage": "web",
+            "status": "ok",
+            "duration_ms": 1672.0,
+            "documents": 3,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 9,
+            "error_code": null
+          },
+          {
+            "stage": "rerank",
+            "status": "ok",
+            "duration_ms": 23906.0,
+            "documents": 3,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 30781.0,
+        "execution_ms": 30781.0
+      },
+      "hit_at_k": false,
+      "reciprocal_rank": 0
+    },
+    {
+      "mode": "web_rerank",
+      "case_id": "meter_battery_type",
+      "http_status": 200,
+      "latency_s": 27.031,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "a042ea17c48b49fba110246507ca2134",
+        "execution_id": "a042ea17c48b49fba110246507ca2134",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "62682d5cf504ddb9cb541d6a",
+            "content": "# 电池测试\n\n\n1. 将黑色表笔插入负极COM端口，红色表笔插入正极V 端口。  \n2. 使用功能选择键，选择1.5V 或 9V 电池档位。  \n3. 将红色表笔接触电池正极，将黑色表笔接触电池负极。  \n4. 在显示屏上读取数值。\n\n<table><tr><td></td><td>良好</td><td>较弱</td><td>坏的</td></tr><tr><td>9V电池:</td><td>&gt;8.2V</td><td>7.2至8.2V</td><td>&lt;7.2V</td></tr><tr><td>1.5V电池:</td><td>&gt;1.35V</td><td>1.22至1.35V</td><td>&lt;1.22V</td></tr></table>",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018851",
+            "url": "",
+            "score": -0.18288984894752502,
+            "score_type": "rerank"
+          },
+          {
+            "id": "fef5e648fbf1dfd1abc79a9e",
+            "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018833",
+            "url": "",
+            "score": -0.30862388014793396,
+            "score_type": "rerank"
+          },
+          {
+            "id": "be72ccaa0c949955d7b1905b",
+            "content": "RS PRO 1.5 V 碱性 5号电池, 2.4 AH, 12节, RS PRO系列 RS 库存编号 : 744-2199 Distrelec 货号 : 304-24-510 制造商 : RS PRO RMB86.15 RMB97.35 * 参考价格 产品技术参数 产品技术参数资料 法例与合规 产品详细信息 <table><tr><th>选择全部</th><th>属性</th><th>值</th></tr><tr><td></td><td>品牌</td><td>RS PRO</td></tr><tr><td></td><td>产品类型</td><td>5号电池</td></tr><tr><td></td><td>系列</td><td>RS PRO</td></tr><tr><td></td><td>化学成份</td><td>碱性</td></tr><tr><td></td><td>标称电压</td><td>1.5V</td></tr><tr><td></td><td>电池容量</td><td>2.4AH</td></tr><tr><td></td><td>电池型号已充电电池尺寸</td><td>AA</td></tr><tr><td></td><td>电池数量</td><td>12</td></tr><tr><td></td><td>终端类型</td><td>标准</td></tr><tr><td></td><td>标准/认证</td><td>No</td></tr><tr><td colspan=\"3\">查找类似产品</td></tr></table> 碱性电池有时会泄漏一种叫做氢氧化钾的物质,这种物质具有腐蚀性,会刺激眼睛、皮肤和呼吸道。为了降低这种风险,最好不要混用不同制造商生产的电池、不同化学成分的电池,并同时更换所有电池。 为什么选择 RS PRO?",
+            "source": "web",
+            "title": "RS PRO 1.5 V 碱性 5号电池, 2.4 AH, 12节, RS PRO系列",
+            "chunk_id": null,
+            "url": "https://rsonline.cn/web/p/products/7442199/",
+            "score": -2.306731939315796,
+            "score_type": "rerank"
+          },
+          {
+            "id": "78efe82d21ee334bcd0eaf12",
+            "content": "# 技术指标说明\n\n\n<table><tr><td>二极管测试</td><td>测试电流最大值1mA,开路电压2.8V DC典型值</td></tr><tr><td>短路蜂鸣测试</td><td>若电阻小于30时产生蜂鸣</td></tr><tr><td>电池测试电流</td><td>9V (6mA); 1.5V (100mA)</td></tr><tr><td>输入阻抗</td><td>&gt;1MΩ</td></tr><tr><td>交流电压频宽</td><td>45Hz ~ 450Hz</td></tr><tr><td>DCA电压跌路测试</td><td>200mV</td></tr><tr><td>显示</td><td>3 1/2 数位,2000位液晶显示,1.1”数位</td></tr><tr><td>超量程提示</td><td>以“1”表示</td></tr><tr><td>极性</td><td>自动(正极无显示);负极显示(-)</td></tr><tr><td>测量率</td><td>正常情况下每秒2次</td></tr><tr><td>低电池提示</td><td>电池电压不足时,显示BAT符号</td></tr><tr><td>电池</td><td>一粒9V (NEDA 1604) 电池</td></tr><tr><td>保险丝</td><td>mA, μA量程;0.2A/250V快速熔断保险丝,A档量程10A/250V快速熔断保险丝</td></tr><tr><td>操作环境</td><td>32°F ~ 122°F (0°C ~ 50°C)</td></tr><tr><td>储存温度</td><td>-4°F ~ 140°F (-20°C ~ 60°C)</td></tr><tr><td>相对湿度</td><td>&lt;70% 操作,&lt;80% 储存</td></tr><tr><td>室内使用,最高海拔</td><td>7000英尺(2000米)</td></tr><tr><td>重量</td><td>255g</td></tr><tr><td>尺寸</td><td>150mm x 70mm x 48mm</td></tr><tr><td>安全认证</td><td>室内使用,符合过电压类别II</td></tr><tr><td>污染级别</td><td>2</td></tr></table>",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018839",
+            "url": "",
+            "score": -2.3905136585235596,
+            "score_type": "rerank"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 860.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 265.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 3704.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 484.0,
+            "documents": 2,
+            "error_code": null
+          },
+          {
+            "stage": "web",
+            "status": "ok",
+            "duration_ms": 1422.0,
+            "documents": 3,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 8,
+            "error_code": null
+          },
+          {
+            "stage": "rerank",
+            "status": "ok",
+            "duration_ms": 20281.0,
+            "documents": 4,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 27031.0,
+        "execution_ms": 27031.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 0.25
+    },
+    {
+      "mode": "web_rerank",
+      "case_id": "meter_hold_reading",
+      "http_status": 200,
+      "latency_s": 32.218,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "509435eb540f49e69aa66a87c032d636",
+        "execution_id": "509435eb540f49e69aa66a87c032d636",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "eb30955612df204cb0d90cfd",
+            "content": "# 数值保持按键HOLD\n\n\n保持键允许仪表固定测量值以供参考：\n\n1. 按下“HOLD”键保持读数， 同时出现“HOLD”字符  \n2. 再次按下“DATA HOLD”键 切换至正常操作",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018842",
+            "url": "",
+            "score": 2.3881797790527344,
+            "score_type": "rerank"
+          },
+          {
+            "id": "ec11b005bba286202843deef",
+            "content": "# 背光灯键（BACKLIGHT）\n\n\n1. 按下背光灯键开启背光灯。  \n2. 再次按背光灯键关闭背光灯。\n\n警告：小心触电，高压电流十分危险，应小心操作。\n\n1. 为了节省电池损耗，使用后请将旋钮调至“OFF”档。  \n2. 若测量过程中显示屏出现“OL”，表明测量值超出所选档位，应改选更高档。\n\n注意:在某些低交直流电压档位内，若表笔与被测物断开，显示屏将出现任意不稳定数值。该现象由高输入灵敏度所致。若接通电路，可读到稳定准确的数值。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018843",
+            "url": "",
+            "score": -2.404494524002075,
+            "score_type": "rerank"
+          },
+          {
+            "id": "ebc75ec8653641c26a98c5ef",
+            "content": "# 交流电压测量\n\n\n警告：谨防触电。\n\n若表笔长度不够不能接触到某些240V用具插座的带电部位，则可能出现插座有电而读到的数值却为0的情况。因此若无电压显示，应检查表笔是否接触到了插座内的金属接口。\n\n注意：正打开或关闭电源时不要进行此项测量，瞬间的强大电压将损坏仪表。\n\n![万用表测量交流电压操作示意图](http://minio_mock/万用表的使用/7e6d1bbd2f2572efa5eb7d0bfd6670307be40be168d1d61d07315684d63abdce.jpg)\n\n1. 将功能转盘置于V AC的位置。  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极V端口。   \n3. 将表笔尖端接触被测物。  \n4. 显示屏上读取电压值。显示屏显示了精确的小数点，数值和(AC,V等)符号。\n\n在显示屏上读取电压数据。不断重调功能转盘至低交流电压档位获得高分辨率读数。读数由精确的小数点和数值表示。",
+            "source": "local",
+            "title": "# 交流电压测量",
+            "chunk_id": "469601738353018846",
+            "url": "",
+            "score": -3.677232503890991,
+            "score_type": "rerank"
+          },
+          {
+            "id": "fef5e648fbf1dfd1abc79a9e",
+            "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+            "source": "local",
+            "title": "# 使用说明书",
+            "chunk_id": "469601738353018833",
+            "url": "",
+            "score": -3.72812557220459,
+            "score_type": "rerank"
+          },
+          {
+            "id": "62682d5cf504ddb9cb541d6a",
+            "content": "# 电池测试\n\n\n1. 将黑色表笔插入负极COM端口，红色表笔插入正极V 端口。  \n2. 使用功能选择键，选择1.5V 或 9V 电池档位。  \n3. 将红色表笔接触电池正极，将黑色表笔接触电池负极。  \n4. 在显示屏上读取数值。\n\n<table><tr><td></td><td>良好</td><td>较弱</td><td>坏的</td></tr><tr><td>9V电池:</td><td>&gt;8.2V</td><td>7.2至8.2V</td><td>&lt;7.2V</td></tr><tr><td>1.5V电池:</td><td>&gt;1.35V</td><td>1.22至1.35V</td><td>&lt;1.22V</td></tr></table>",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018851",
+            "url": "",
+            "score": -3.959846019744873,
+            "score_type": "rerank"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 750.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 172.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 3437.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 766.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "web",
+            "status": "ok",
+            "duration_ms": 2218.0,
+            "documents": 3,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 10,
+            "error_code": null
+          },
+          {
+            "stage": "rerank",
+            "status": "ok",
+            "duration_ms": 24875.0,
+            "documents": 8,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 32218.0,
+        "execution_ms": 32218.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "mode": "web_rerank",
+      "case_id": "meter_ol_display",
+      "http_status": 200,
+      "latency_s": 27.969,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "feb094ff2a85466d8297978e4b776e6f",
+        "execution_id": "feb094ff2a85466d8297978e4b776e6f",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "ec11b005bba286202843deef",
+            "content": "# 背光灯键（BACKLIGHT）\n\n\n1. 按下背光灯键开启背光灯。  \n2. 再次按背光灯键关闭背光灯。\n\n警告：小心触电，高压电流十分危险，应小心操作。\n\n1. 为了节省电池损耗，使用后请将旋钮调至“OFF”档。  \n2. 若测量过程中显示屏出现“OL”，表明测量值超出所选档位，应改选更高档。\n\n注意:在某些低交直流电压档位内，若表笔与被测物断开，显示屏将出现任意不稳定数值。该现象由高输入灵敏度所致。若接通电路，可读到稳定准确的数值。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018843",
+            "url": "",
+            "score": 0.6445023417472839,
+            "score_type": "rerank"
+          },
+          {
+            "id": "fef5e648fbf1dfd1abc79a9e",
+            "content": "# 使用说明书\n\n\nRS-12\n\n编号: 123-1939\n\n数字万用表\n\n![中文界面选项标识](http://minio_mock/万用表的使用/115adcddd73aeacbccd21861a542e8c23f78937f8680317548ea8393bcb0801b.jpg)\n\n![数字万用表RS-12使用说明示意图](http://minio_mock/万用表的使用/4ac9107ddb4836e705ac8450b002bad4034235890c6b88aaa1988867546e11ff.jpg)",
+            "source": "local",
+            "title": "# 使用说明书",
+            "chunk_id": "469601738353018833",
+            "url": "",
+            "score": -4.228883266448975,
+            "score_type": "rerank"
+          },
+          {
+            "id": "f23089f885f5b5fcb162dde9",
+            "content": "# 安全标识\n\n\n![警告标识：注意危险电压，操作需谨慎](http://minio_mock/万用表的使用/f3f7af819713659b6e8e7871d5c4ec3546d77966f6985a63152725e50f41c093.jpg)\n\n表明此操作须参照说明书进行。\n\nWARNING 表明此处可能出现危险电压，请避开以免导致死亡或严重伤害。  \nCAUTION 表明此处可能出现危险电压，请避开以免导致仪表的损坏。\n\n![万用表安全标识说明](http://minio_mock/万用表的使用/c787f7b337b289d57a67420b41bfe39f8f809db704d4052a5cbe189c2e1bca84.jpg)\n\n请勿连接到500VAC或VDC的电路上。\n\n表明此端口可能出现危险电压。\n\n![万用表安全标识说明图](http://minio_mock/万用表的使用/033cc6679fdc257ba3dbbe6635a6e18433bf314706cb9e326d21bb2154bbdbef.jpg)\n\n双绝缘保护。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018835",
+            "url": "",
+            "score": -5.265586853027344,
+            "score_type": "rerank"
+          },
+          {
+            "id": "ebc75ec8653641c26a98c5ef",
+            "content": "# 交流电压测量\n\n\n警告：谨防触电。\n\n若表笔长度不够不能接触到某些240V用具插座的带电部位，则可能出现插座有电而读到的数值却为0的情况。因此若无电压显示，应检查表笔是否接触到了插座内的金属接口。\n\n注意：正打开或关闭电源时不要进行此项测量，瞬间的强大电压将损坏仪表。\n\n![万用表测量交流电压操作示意图](http://minio_mock/万用表的使用/7e6d1bbd2f2572efa5eb7d0bfd6670307be40be168d1d61d07315684d63abdce.jpg)\n\n1. 将功能转盘置于V AC的位置。  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极V端口。   \n3. 将表笔尖端接触被测物。  \n4. 显示屏上读取电压值。显示屏显示了精确的小数点，数值和(AC,V等)符号。\n\n在显示屏上读取电压数据。不断重调功能转盘至低交流电压档位获得高分辨率读数。读数由精确的小数点和数值表示。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018846",
+            "url": "",
+            "score": -5.287258625030518,
+            "score_type": "rerank"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 813.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 187.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 4047.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 562.0,
+            "documents": 2,
+            "error_code": null
+          },
+          {
+            "stage": "web",
+            "status": "ok",
+            "duration_ms": 1391.0,
+            "documents": 3,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 8,
+            "error_code": null
+          },
+          {
+            "stage": "rerank",
+            "status": "ok",
+            "duration_ms": 20953.0,
+            "documents": 4,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 27969.0,
+        "execution_ms": 27969.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "mode": "web_rerank",
+      "case_id": "meter_resistance_safety",
+      "http_status": 200,
+      "latency_s": 31.156,
+      "response": {
+        "schema_version": "1.0",
+        "request_id": "ff00007cf44f4a05aa58dffbfdc614e3",
+        "execution_id": "ff00007cf44f4a05aa58dffbfdc614e3",
+        "backend": "live",
+        "status": "ok",
+        "documents": [
+          {
+            "id": "bc5d4c72872ad722cef5ae75",
+            "content": "1. 准备工作 (Preparation) 在进行电阻测量之前,首先要确保测量环境的安全性。以下是准备工作的几个步骤: 确保电路断电:在测量电阻之前,务必确保电路处于断电状态,以免对设备和自身造成伤害。 检查设备:检查万用表或电阻计的电池是否充足,确保仪器正常工作。",
+            "source": "web",
+            "title": "电阻如何测量:详细步骤与注意事项解析",
+            "chunk_id": null,
+            "url": "https://www.sohu.com/a/823774527_122077424",
+            "score": 4.812386989593506,
+            "score_type": "rerank"
+          },
+          {
+            "id": "b7954295d6a7735ac5ee8cb1",
+            "content": "# 电阻测量\n\n\n警告: 为防触电,测量前应断开电源，把所有电容放电，取出电池和拔掉电线。\n\n1. 将功能转盘置于最高电阻Ω位置.  \n2. 将黑色表笔插入负极COM端口，红色表笔插入正极Ω端口  \n3. 把表笔接触被测电路或元件。测试时最好断开电路的一端，以使剩余的电路不会干扰被测电阻数值。  \n4. 读取显示屏上读数，然后将功能转盘调至最低电阻Ω档位，通常大于实际电阻或预测电阻.读数由精确的小数点和数值表示。\n\n![万用表测量电阻操作示意图](http://minio_mock/万用表的使用/e63768e17ad35b92a5fb78abf51aee0281b7b6541bfa95f7ebb514f7a038a8b5.jpg)",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018848",
+            "url": "",
+            "score": 2.348383665084839,
+            "score_type": "rerank"
+          },
+          {
+            "id": "a4fabf3667abdcfd3a84da9d",
+            "content": "# 安全手册\n\n\n为了您的安全，请在使用本仪表之前仔细阅读该手册:使用本表时，请勿将输入的测量值超出其所允许的量程范围。\n\n<table><tr><td></td><td>输入量程</td></tr><tr><td>功能</td><td>最大输入</td></tr><tr><td>交/直流电压</td><td>直流/交流电压600V</td></tr><tr><td>直流/交流电压</td><td>直流/交流电压600V, 200Vrms 用于200mV量程</td></tr><tr><td>mA直流</td><td>200mA 250V快速熔断保险丝</td></tr><tr><td>A DC</td><td>10A 250V 快速熔断保险丝(最多每15分钟,需时30秒)</td></tr><tr><td>电阻,短路测试</td><td>250Vrms, 最多15秒</td></tr></table>\n\n2. 在测量高压电路时，请严格注意个人及设备的安全防护措施。  \n3. 若负极端口（COM）电压超出500V以上接地电压，请勿进行电压测试。  \n4. 若功能开关置于电流，电阻或二极管位置时，请勿将表笔与电路相连接，否则会损坏仪表。  \n5. 进行电阻或二极管测试时，应把电容放电并断开电源。  \n6. 打开后盖，更换保险丝或电池之前，请关闭电源并取下表笔。  \n7. 请勿使用仪表，直到电池盖和保险丝盖装好，螺丝拧紧。",
+            "source": "local",
+            "title": "RS-12 manual",
+            "chunk_id": "469601738353018834",
+            "url": "",
+            "score": 1.4260917901992798,
+            "score_type": "rerank"
+          }
+        ],
+        "message": "",
+        "warnings": [],
+        "traces": [
+          {
+            "stage": "identify",
+            "status": "ok",
+            "duration_ms": 703.0,
+            "documents": 0,
+            "error_code": null
+          },
+          {
+            "stage": "vector",
+            "status": "ok",
+            "duration_ms": 156.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "hyde",
+            "status": "ok",
+            "duration_ms": 3141.0,
+            "documents": 5,
+            "error_code": null
+          },
+          {
+            "stage": "kg",
+            "status": "ok",
+            "duration_ms": 640.0,
+            "documents": 14,
+            "error_code": null
+          },
+          {
+            "stage": "web",
+            "status": "ok",
+            "duration_ms": 1454.0,
+            "documents": 3,
+            "error_code": null
+          },
+          {
+            "stage": "fuse",
+            "status": "ok",
+            "duration_ms": 0.0,
+            "documents": 10,
+            "error_code": null
+          },
+          {
+            "stage": "rerank",
+            "status": "ok",
+            "duration_ms": 25046.0,
+            "documents": 3,
+            "error_code": null
+          }
+        ],
+        "cache": "bypass",
+        "duration_ms": 31140.0,
+        "execution_ms": 31140.0
+      },
+      "hit_at_k": true,
+      "reciprocal_rank": 0.5
+    }
+  ],
+  "summary": {
+    "vector": {
+      "cases": 5,
+      "http_success": 5,
+      "partial": 0,
+      "hit_at_5": 0.6,
+      "mrr": 0.6,
+      "mean_latency_s": 3.284
+    },
+    "fusion": {
+      "cases": 5,
+      "http_success": 5,
+      "partial": 0,
+      "hit_at_5": 1.0,
+      "mrr": 0.7166666666666667,
+      "mean_latency_s": 5.969
+    },
+    "rerank": {
+      "cases": 5,
+      "http_success": 5,
+      "partial": 0,
+      "hit_at_5": 1.0,
+      "mrr": 0.7666666666666667,
+      "mean_latency_s": 23.247
+    },
+    "web_rerank": {
+      "cases": 5,
+      "http_success": 5,
+      "partial": 0,
+      "hit_at_5": 0.8,
+      "mrr": 0.55,
+      "mean_latency_s": 29.831
+    }
+  }
+}

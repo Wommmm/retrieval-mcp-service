@@ -1,0 +1,9 @@
+services:
+  retrieval:
+    build: .
+    ports:
+      - "127.0.0.1:8051:8050"
+    environment:
+      RETRIEVAL_BACKEND: demo
+      RETRIEVAL_API_TOKEN: ${RETRIEVAL_API_TOKEN:-}
+    restart: unless-stopped

@@ -1,0 +1,12 @@
+{
+  "python": "3.12",
+  "source": "verified Agent consumer environment",
+  "versions": {
+    "langgraph": "1.2.11",
+    "langgraph-prebuilt": "1.1.0",
+    "langchain-core": "1.4.9",
+    "mcp": "1.29.0",
+    "langchain-openai": "1.3.5",
+    "httpx": "0.28.1"
+  }
+}

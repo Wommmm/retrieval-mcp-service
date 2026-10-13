@@ -1,0 +1,46 @@
+{
+  "source": "docker_demo_smoke",
+  "health": {
+    "status": "alive",
+    "backend": "demo"
+  },
+  "http": 200,
+  "response": {
+    "schema_version": "1.0",
+    "request_id": "2c32ccd7bfcb40c0bea36c55bf591ce6",
+    "execution_id": "2c32ccd7bfcb40c0bea36c55bf591ce6",
+    "backend": "demo",
+    "status": "ok",
+    "documents": [
+      {
+        "id": "1d8777d10c0c823c",
+        "content": "RS-12 数字万用表使用 9V NEDA 1604 电池。",
+        "source": "demo",
+        "title": "RS-12 protocol demo fixture",
+        "chunk_id": null,
+        "url": "",
+        "score": 1.0,
+        "score_type": "lexical"
+      }
+    ],
+    "message": "",
+    "warnings": [
+      "demo_fixture_not_real_retrieval"
+    ],
+    "traces": [
+      {
+        "stage": "demo_lexical",
+        "status": "ok",
+        "duration_ms": 0.0,
+        "documents": 1,
+        "error_code": null
+      }
+    ],
+    "cache": "miss",
+    "duration_ms": 2.366,
+    "execution_ms": 2.021
+  },
+  "limitations": [
+    "Demo protocol fixture; no live BGE or Milvus inside this image."
+  ]
+}
