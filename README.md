@@ -46,17 +46,6 @@ python -m retrieval_mcp.client "电池"
 
 返回明确包含 `backend=demo` 和 `source=demo`；演示结果不能用于真实检索质量评估。
 
-## 真实检索
-
-```bash
-python -m pip install '.[live]'
-# 将 .env.example 复制为本地 .env，并填写自己的配置。
-python -m retrieval_mcp --env-file .env --port 8050
-```
-
-设 `RETRIEVAL_BACKEND=live`，提供 LLM API Key、已存在的 BGE-M3 与 BGE-Reranker 文件、Milvus 集合及 Neo4j。默认离线加载模型；本包不自动下载模型，也不包含原网页系统的完整上传/导入流程。模型向量维度、索引字段与集合必须匹配。
-
-`.env` 中密钥只用于本地，不能提交。支持系统环境变量 `new_apikey`、`DASHSCOPE_API_KEY` 或 `OPENAI_API_KEY`。Neo4j、Milvus 由部署方运行，按配置连接；本包不删除或重建既有数据库。
 
 ## 公共接口
 
@@ -119,8 +108,6 @@ python scripts/evaluate.py --web
 python -m pip wheel --no-deps . -w dist
 docker compose up --build -d
 ```
-
-Docker演示地址为 `http://127.0.0.1:8051`，默认demo，非root用户运行。构建上下文排除私密配置、虚拟环境和模型。使用结束执行 `docker compose down`。
 
 现有5题四配置报告中，本地融合加精排Hit@5=100%、MRR=0.767；加入联网为80%、0.55。因此默认本地融合精排，联网可选。结果仅适用于该说明书5题内容标签。完整文档、排序与耗时保存在 `reports/live-ablation.json`，没有过滤未命中结果。
 
